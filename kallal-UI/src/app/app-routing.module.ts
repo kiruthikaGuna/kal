@@ -17,7 +17,6 @@ import { StructureMasterComponent } from './admin/structure-master/structure-mas
 import { UserManagementComponent } from './admin/user-management/user-management.component';
 import { VenderMasterComponent } from './admin/vender-master/vender-master.component';
 import { WarehouseMasterComponent } from './admin/warehouse-master/warehouse-master.component';
-import { AddUsermanagementComponent } from './admin/popup/add-usermanagement/add-usermanagement.component';
 import { EditUsermanagementComponent } from './admin/popup/edit-usermanagement/edit-usermanagement.component';
 import { ConsignmentalDetailComponent } from './admin/consignmental-detail/consignmental-detail.component';
 import { ChangePasswordComponent } from './setting/change-password/change-password.component';
@@ -55,7 +54,6 @@ const routes: Routes = [
       { path: 'User_Management', component: UserManagementComponent, data: { 'title': 'User_Management' } },
       { path: 'Vender_Master', component: VenderMasterComponent, data: { 'title': 'Vender_Master' } },
       { path: 'Warehouse_Master', component: WarehouseMasterComponent, data: { 'title': 'Warehouse_Master' } },
-      { path: 'add_userMagagement', component: AddUsermanagementComponent, data: { 'title': 'add_userMagagement' } },
       { path: 'edit_userMagagement', component: EditUsermanagementComponent, data: { 'title': 'edit_userMagagement' } },
       { path: 'Consignmental_Detail', component: ConsignmentalDetailComponent, data: { 'title': 'Consignmental_Detail' } },
       { path: 'changepassword', component: ChangePasswordComponent, data: { 'title': 'changepassword' } },
