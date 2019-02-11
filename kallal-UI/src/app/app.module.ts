@@ -35,6 +35,7 @@ import { EditUsermanagementComponent } from './admin/popup/edit-usermanagement/e
 import { SettingComponent } from './setting/setting.component';
 import { ChangePasswordComponent } from './setting/change-password/change-password.component';
 import { ConsignmentalDetailComponent } from './admin/consignmental-detail/consignmental-detail.component';
+import { ConsignmentWeightComponent } from './admin/consignment-weight/consignment-weight.component';
 import { MatCardModule } from '@angular/material/card';
 import { UserManagementAddComponent } from './admin/user-management-add/user-management-add.component';
 import { VendorMasterAddComponent } from './admin/vendor-master-add/vendor-master-add.component';
@@ -45,6 +46,7 @@ import { ProductMasterAddComponent } from './admin/product-master-add/product-ma
 import { QualityMaseterAddComponent } from './admin/quality-maseter-add/quality-maseter-add.component';
 import { BagMasterAddComponent } from './admin/bag-master-add/bag-master-add.component';
 import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency-master-add.component';
+
 
 @NgModule({
   declarations: [
@@ -73,6 +75,7 @@ import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency
     SettingComponent,
     ChangePasswordComponent,
     ConsignmentalDetailComponent,
+    ConsignmentWeightComponent,
     UserManagementAddComponent,
     VendorMasterAddComponent,
     DispatchMasetrAddComponent,
@@ -81,7 +84,7 @@ import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency
     ProductMasterAddComponent,
     QualityMaseterAddComponent,
     BagMasterAddComponent,
-    CurrencyMasterAddComponent,
+    CurrencyMasterAddComponent
   ],
   imports: [
     BrowserModule,
