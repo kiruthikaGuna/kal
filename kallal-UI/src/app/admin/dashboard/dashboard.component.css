@@ -1,0 +1,128 @@
+.pad{
+    background: white;
+    /* padding: 20px; */
+}
+
+.mr-l{
+    margin-left: 15px;
+}
+
+.fcolor{
+    color: #b3b1b1;
+}
+.background-color{
+    background: white;
+    width: 100%;
+}
+
+.verticalscroll{
+    overflow-y: auto;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+
+.tablepad{
+    padding-top: 10px;
+    background: white;
+   
+}
+
+tr:nth-child(even){
+    background: #F5F6FA;
+    }
+
+    .dropdown{
+        float: right;
+        width: 115px;
+        margin-top: -15px;
+            padding-top: 10px;
+        
+
+    }
+
+    .aligntop{
+        margin-top: -9px;
+    }
+
+    .perc1{
+        margin-top: 28px;
+        font-size: 12px;
+        margin-left: -25px;
+        float: left;
+        color: #FF4141;
+        font-family: Source Sans Pro;
+        font-weight: 700;
+    }
+
+    .perc2{
+        margin-top: 28px;
+        font-size: 12px;
+        margin-left: -35px;
+        float: left;
+        color: #3CC480;
+        font-family: Source Sans Pro;
+        font-weight: 700;
+    }
+
+    .value{
+        
+    font-size: 25px;
+    float: left;
+    color: rgb(77, 79, 92);
+    font-weight: 700;
+    float: left;
+    font-family: Source Sans Pro;
+    }
+
+    .wid-25{
+        width: 25%;
+    }
+
+    .wid-15{
+        width: 15%;
+    }
+
+    .wid-30{
+        width: 30%;
+    }
+
+    .wid-32{
+        width: 32%;
+    }
+
+    .bdg{
+   
+        border: 2px solid E7965C;
+        padding: 2px;
+        border-radius: 25px;
+    }
+.shifont{
+    color:#4D4F5C;
+}
+
+.tablecolor{
+margin-top: -12px;
+}
+
+.panel-body {
+    padding: 0px;
+}
+.bg-clr {
+    background: #ffffff;
+    min-height: 180px;
+    box-shadow: 0px 0px 10px -1px #ccc;
+}
+
+.bg-clr1 {
+    background: #ffffff;
+    min-height: 74px;
+    box-shadow: 0px 0px 10px -1px #ccc;
+}
+
+.cont3{
+    padding: 15px;
+}
+mat-card{
+
+padding: 8px;
+}

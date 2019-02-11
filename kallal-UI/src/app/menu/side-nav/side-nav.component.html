@@ -1,0 +1,146 @@
+<div class="main col-lg-12 col-sm-12 col-md-12">
+    <div class="row content">
+        <div class="col-sm-2 col-md-2 sidenav backgroundcolor pad-0">
+            <ul class="nav nav-pills nav-stacked font-sidenave heightSide">
+                <li class="pad-0 white">
+                    <img src="./assets/img/logo@2x.png" class="center">
+                </li>
+                <li>
+                    <a [routerLink]="['dashboard']" [ngClass]="(menu == 'dashboard')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('dashboard')">
+                        <img src="assets/img/Dashboard.png" />
+                        <span class="leftpad"> Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['User_Management']" [ngClass]="(menu == 'User_Management')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('User_Management')">
+                        <img src="assets/img/User_Management.png" />
+                        <span class="leftpad"> User Management </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Vender_Master']" [ngClass]="(menu == 'Vender_Master')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Vender_Master')">
+                        <img src="assets/img/Vendor_Master.png" />
+                        <span class="leftpad"> Vender Master </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Dispatch_Master']" [ngClass]="(menu == 'Dispatch_Master')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Dispatch_Master')">
+                        <img src="assets/img/Dispatch_Master.png" />
+                        <span class="leftpad"> Dispatch Master</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Warehouse_Master']" [ngClass]="(menu == 'Warehouse_Master')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Warehouse_Master')">
+                        <img src="assets/img/Warehouse_Master.png" />
+                        <span class="leftpad"> Warehouse Master</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Structure_Master']" [ngClass]="(menu == 'Structure_Master')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Structure_Master')">
+                        <img src="assets/img/Structure_Master.png" />
+                        <span class="leftpad"> structure Master </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Product_Master']" [ngClass]="(menu == 'Product_Master')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Product_Master')">
+                        <img src="assets/img/Product_Master.png" />
+                        <span class="leftpad"> Product Master </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Quality_Master']" [ngClass]="(menu == 'Quality_Master')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Quality_Master')">
+                        <img src="assets/img/Quality_Master.png" />
+                        <span class="leftpad"> Quality Master </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Big_Master']" [ngClass]="(menu == 'Big_Master')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Big_Master')">
+                        <img src="assets/img/Bag_Master.png" />
+                        <span class="leftpad"> Big Master </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Currency_Master']" [ngClass]="(menu == 'Currency_Master')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Currency_Master')">
+                        <img src="assets/img/Currency_Master.png" />
+                        <span class="leftpad"> Currency Master</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Approvel']" [ngClass]="(menu == 'Approvel')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Approvel')">
+                        <img src="assets/img/Approval.png" />
+                        <span class="leftpad"> Approvel </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Consignmental_Detail']" [ngClass]="(menu == 'Consignmental_Detail')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Consignmental_Detail')">
+                        <img src="assets/img/Approval.png" />
+                        <span class="leftpad"> Consignmental Detail </span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-sm-10  col-md-10 col-lg-10 pad-0">
+            <div class="panel panel-default hgh-top">
+                <div class="panel-body">
+                    <ul class="nav navbar-nav right-panel">
+                        <li>
+                            <a href="#" class="navbar-left top-2">
+                                <img src="assets/img/notification.png" class="imgWidht">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-left top-2">
+                                <img src="assets/img/settings.png" class="imgWidht" (click)="settings()">
+                            </a>
+                        </li>
+                        <li class="navbar-user-dropdown">
+                            <div class="dropdown">
+                                <span class="dropbtn">User Name
+                                    <img src="assets/img/small-down.png" />
+                                </span>
+                                <div class="dropdown-content">
+                                     <a (click)="logout();">Logout</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-left ">
+                                <img src="assets/img/Avatar.png" class="avatar-img">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="Display">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
