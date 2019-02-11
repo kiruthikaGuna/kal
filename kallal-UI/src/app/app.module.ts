@@ -36,15 +36,15 @@ import { SettingComponent } from './setting/setting.component';
 import { ChangePasswordComponent } from './setting/change-password/change-password.component';
 import { ConsignmentalDetailComponent } from './admin/consignmental-detail/consignmental-detail.component';
 import { MatCardModule } from '@angular/material/card';
-import { UserManagementAddComponent } from './user-management-add/user-management-add.component';
-import { VendorMasterAddComponent } from './vendor-master-add/vendor-master-add.component';
-import { DispatchMasetrAddComponent } from './dispatch-masetr-add/dispatch-masetr-add.component';
-import { WareHouseAddComponent } from './ware-house-add/ware-house-add.component';
-import { StructureMasterAddComponent } from './structure-master-add/structure-master-add.component';
-import { ProductMasterAddComponent } from './product-master-add/product-master-add.component';
-import { QualityMaseterAddComponent } from './quality-maseter-add/quality-maseter-add.component';
-import { BagMasterAddComponent } from './bag-master-add/bag-master-add.component';
-import { CurrencyMasterAddComponent } from './currency-master-add/currency-master-add.component';
+import { UserManagementAddComponent } from './admin/user-management-add/user-management-add.component';
+import { VendorMasterAddComponent } from './admin/vendor-master-add/vendor-master-add.component';
+import { DispatchMasetrAddComponent } from './admin/dispatch-masetr-add/dispatch-masetr-add.component';
+import { WareHouseAddComponent } from './admin/ware-house-add/ware-house-add.component';
+import { StructureMasterAddComponent } from './admin/structure-master-add/structure-master-add.component';
+import { ProductMasterAddComponent } from './admin/product-master-add/product-master-add.component';
+import { QualityMaseterAddComponent } from './admin/quality-maseter-add/quality-maseter-add.component';
+import { BagMasterAddComponent } from './admin/bag-master-add/bag-master-add.component';
+import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency-master-add.component';
 
 @NgModule({
   declarations: [
