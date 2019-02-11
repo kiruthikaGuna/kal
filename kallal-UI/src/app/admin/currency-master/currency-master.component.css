@@ -1,0 +1,70 @@
+.pad-top{
+    padding-top: 20px;
+}
+
+.input-group{
+    width: 130px;
+}
+
+.margLeft{
+    margin-left: 60px;
+}
+
+.colorbtn{
+    background-color: #DF7426;
+    color: white;
+}
+
+.marginTable{
+    margin-top: 14px;
+}
+/* Table style*/
+
+.verticalscroll{
+    overflow-y: auto;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+ 
+
+.tablecolor{
+    background: white;
+   
+}
+
+
+tr:nth-child(even){
+    background: #F5F6FA;
+    }
+
+    .dropdown{
+        float: right;
+        width: 115px;
+
+    }
+    .thumbnail{
+        height: 92px;
+    }
+    .aligntop{
+        margin-top: 10px;
+    }
+   .pad-0{
+    padding: 0px;
+    }
+
+.matField{
+    width: 50%;
+    margin-top: -15px;
+}
+
+.text-center{
+    text-align: center
+}
+
+.alignend{
+    text-align: center;
+}
+
+table th {
+    width: auto !important;
+}

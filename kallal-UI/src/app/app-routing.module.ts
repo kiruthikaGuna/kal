@@ -21,6 +21,15 @@ import { AddUsermanagementComponent } from './admin/popup/add-usermanagement/add
 import { EditUsermanagementComponent } from './admin/popup/edit-usermanagement/edit-usermanagement.component';
 import { ConsignmentalDetailComponent } from './admin/consignmental-detail/consignmental-detail.component';
 import { ChangePasswordComponent } from './setting/change-password/change-password.component';
+import { UserManagementAddComponent } from './user-management-add/user-management-add.component';
+import { VendorMasterAddComponent } from './vendor-master-add/vendor-master-add.component';
+import { DispatchMasetrAddComponent } from './dispatch-masetr-add/dispatch-masetr-add.component';
+import { WareHouseAddComponent } from './ware-house-add/ware-house-add.component';
+import { StructureMasterAddComponent } from './structure-master-add/structure-master-add.component';
+import { ProductMasterAddComponent } from './product-master-add/product-master-add.component';
+import { QualityMaseterAddComponent } from './quality-maseter-add/quality-maseter-add.component';
+import { BagMasterAddComponent } from './bag-master-add/bag-master-add.component';
+import { CurrencyMasterAddComponent } from './currency-master-add/currency-master-add.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/authentication', pathMatch: 'full' },
@@ -50,8 +59,16 @@ const routes: Routes = [
       { path: 'edit_userMagagement', component: EditUsermanagementComponent, data: { 'title': 'edit_userMagagement' } },
       { path: 'Consignmental_Detail', component: ConsignmentalDetailComponent, data: { 'title': 'Consignmental_Detail' } },
       { path: 'changepassword', component: ChangePasswordComponent, data: { 'title': 'changepassword' } },
-
+      { path: 'user_Management_add', component: UserManagementAddComponent, data: { 'title': 'user_Management_add' } },
+      { path: 'vendorMaster_add', component: VendorMasterAddComponent, data: { 'title': 'vendorMaster_add' } },
+      { path: 'warehouse_add', component: WareHouseAddComponent, data: { 'title': 'warehouse_add' } },
+      { path: 'structureMaster_add', component: StructureMasterAddComponent, data: { 'title': 'structureMaster_add' } },
+      { path: 'productMaster_add', component: ProductMasterAddComponent, data: { 'title': 'productMaster_add' } },
+      { path: 'QualityMaster_add', component: QualityMaseterAddComponent, data: { 'title': 'QualityMaster_add' } },
+      { path: 'BagMaster_add', component: BagMasterAddComponent, data: { 'title': 'BagMaster_add' } },
+      { path: 'currencyMaster_add', component: CurrencyMasterAddComponent, data: { 'title': 'currencyMaster_add' } },
     ]
+    //ProductMasterAddComponent
   }
 ];
 

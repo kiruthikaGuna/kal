@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 
 
 import { AppRoutingModule } from './app-routing.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './authentication/login/login.component';
@@ -36,6 +36,15 @@ import { SettingComponent } from './setting/setting.component';
 import { ChangePasswordComponent } from './setting/change-password/change-password.component';
 import { ConsignmentalDetailComponent } from './admin/consignmental-detail/consignmental-detail.component';
 import { MatCardModule } from '@angular/material/card';
+import { UserManagementAddComponent } from './user-management-add/user-management-add.component';
+import { VendorMasterAddComponent } from './vendor-master-add/vendor-master-add.component';
+import { DispatchMasetrAddComponent } from './dispatch-masetr-add/dispatch-masetr-add.component';
+import { WareHouseAddComponent } from './ware-house-add/ware-house-add.component';
+import { StructureMasterAddComponent } from './structure-master-add/structure-master-add.component';
+import { ProductMasterAddComponent } from './product-master-add/product-master-add.component';
+import { QualityMaseterAddComponent } from './quality-maseter-add/quality-maseter-add.component';
+import { BagMasterAddComponent } from './bag-master-add/bag-master-add.component';
+import { CurrencyMasterAddComponent } from './currency-master-add/currency-master-add.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +72,16 @@ import { MatCardModule } from '@angular/material/card';
     EditUsermanagementComponent,
     SettingComponent,
     ChangePasswordComponent,
-    ConsignmentalDetailComponent
+    ConsignmentalDetailComponent,
+    UserManagementAddComponent,
+    VendorMasterAddComponent,
+    DispatchMasetrAddComponent,
+    WareHouseAddComponent,
+    StructureMasterAddComponent,
+    ProductMasterAddComponent,
+    QualityMaseterAddComponent,
+    BagMasterAddComponent,
+    CurrencyMasterAddComponent,
   ],
   imports: [
     BrowserModule,
