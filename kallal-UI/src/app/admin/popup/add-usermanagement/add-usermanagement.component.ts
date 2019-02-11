@@ -10,7 +10,7 @@ import { VenderMasterComponent } from '../../vender-master/vender-master.compone
 })
 export class AddUsermanagementComponent implements OnInit {
 
-  constructor(public dialogRef: MatDialogRef<UserManagementComponent,VenderMasterComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { 
+  constructor(public dialogRef: MatDialogRef<UserManagementComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { 
     dialogRef.disableClose = true;
   }
 

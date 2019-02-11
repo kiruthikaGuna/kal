@@ -1,3 +1,56 @@
-<p>
-  product-master works!
-</p>
+<div class="">
+  <div class="container col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <h3>Prouct Mastert</h3>
+      </div>
+
+      <div class="col-md-9 col-sm-9 ">
+        <div class="floatRight">
+          <div class=" pad-top margLeft col-md-5">
+            <div class="input-group ">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            </div>
+          </div>
+          <div class="col-md-4 pad-top ">
+            <button class="btn colorbtn" (click)="add()"><i class="fa fa-plus"></i> Home</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r">
+    <div class="panel-body ">
+      <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
+        <table class="table">
+          <thead class="header-clr" style="background-color: #f0f0f7;">
+            <tr class=" ">
+              <th>#</th>
+              <th>Product Code</th>
+              <th>Prduct Name</th>
+              <th></th>
+              <th></th>
+              </tr>
+          </thead>
+          <tbody class="alternate_color body-clr">
+            <tr *ngFor="let tablevalue of table1value">
+              <td>{{tablevalue.no}}</td>
+              <td>{{tablevalue.ProductCode}}</td>
+              <td>{{tablevalue.ProductName}}</td>
+              <td class="alignend "> <img src="assets/img/edit.png" (click)="edit()" /></td>
+              <td class="alignend "> <img src="assets/img/delete.png" /></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+</div>
