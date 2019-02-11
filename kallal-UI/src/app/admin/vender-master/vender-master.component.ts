@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { EditUsermanagementComponent } from '../popup/edit-usermanagement/edit-usermanagement.component';
+import { EditVendorMasterComponent } from '../popup/edit-vendor-master/edit-vendor-master.component';
 
 
 @Component({
@@ -27,7 +27,7 @@ export class VenderMasterComponent implements OnInit {
 
 
   edit() {
-    const dialogRef = this.dialog.open(EditUsermanagementComponent, {
+    const dialogRef = this.dialog.open(EditVendorMasterComponent, {
       width: '500px',
       //  data: daa,
 

@@ -29,6 +29,14 @@ import { ProductMasterAddComponent } from './admin/product-master-add/product-ma
 import { QualityMaseterAddComponent } from './admin/quality-maseter-add/quality-maseter-add.component';
 import { BagMasterAddComponent } from './admin/bag-master-add/bag-master-add.component';
 import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency-master-add.component';
+import { EditBagMasterComponent } from './admin/popup/edit-bag-master/edit-bag-master.component';
+import { EditCurrencyMasterComponent } from './admin/popup/edit-currency-master/edit-currency-master.component';
+import { EditDispatchMasterComponent } from './admin/popup/edit-dispatch-master/edit-dispatch-master.component';
+import { EditProductMasterComponent } from './admin/popup/edit-product-master/edit-product-master.component';
+import { EditQualityMasterComponent } from './admin/popup/edit-quality-master/edit-quality-master.component';
+import { EditStructureMasterComponent } from './admin/popup/edit-structure-master/edit-structure-master.component';
+import { EditVendorMasterComponent } from './admin/popup/edit-vendor-master/edit-vendor-master.component';
+import { EditWarehouseMasterComponent } from './admin/popup/edit-warehouse-master/edit-warehouse-master.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/authentication', pathMatch: 'full' },
@@ -66,8 +74,16 @@ const routes: Routes = [
       { path: 'BagMaster_add', component: BagMasterAddComponent, data: { 'title': 'BagMaster_add' } },
       { path: 'currencyMaster_add', component: CurrencyMasterAddComponent, data: { 'title': 'currencyMaster_add' } },
       { path: 'dispatch_add', component: DispatchMasetrAddComponent, data: { 'title': 'dispatch_add' } },
+      { path: 'editBagMaster', component: EditBagMasterComponent, data: { 'title': 'editBagMaster' } },
+      { path: 'editcurrencyMaster', component: EditCurrencyMasterComponent, data: { 'title': 'editcurrencyMaster' } },
+      { path: 'editdispatchMaaster', component: EditDispatchMasterComponent, data: { 'title': 'editdispatchMaaster' } },
+      { path: 'editproductMaster', component: EditProductMasterComponent, data: { 'title': 'editproductMaster' } },
+      { path: 'editqualityMaster', component: EditQualityMasterComponent, data: { 'title': 'editqualityMaster' } },
+      { path: 'editstructureMaster', component: EditStructureMasterComponent, data: { 'title': 'editstructureMaster' } },
+      { path: 'editvendorMaster', component: EditVendorMasterComponent, data: { 'title': 'editvendorMaster' } },
+      { path: 'editwarehouseMaster', component: EditWarehouseMasterComponent, data: { 'title': 'editwarehouseMaster' } },
     ]
-    //ProductMasterAddComponent
+    //CurrencyMasterComponent EditBagMasterComponent
   }
 ];
 

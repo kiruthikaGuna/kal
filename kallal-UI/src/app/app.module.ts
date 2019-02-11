@@ -43,6 +43,14 @@ import { StructureMasterAddComponent } from './admin/structure-master-add/struct
 import { ProductMasterAddComponent } from './admin/product-master-add/product-master-add.component';
 import { QualityMaseterAddComponent } from './admin/quality-maseter-add/quality-maseter-add.component';
 import { BagMasterAddComponent } from './admin/bag-master-add/bag-master-add.component';
+import { EditVendorMasterComponent } from './admin/popup/edit-vendor-master/edit-vendor-master.component';
+import { EditStructureMasterComponent } from './admin/popup/edit-structure-master/edit-structure-master.component';
+import { EditProductMasterComponent } from './admin/popup/edit-product-master/edit-product-master.component';
+import { EditQualityMasterComponent } from './admin/popup/edit-quality-master/edit-quality-master.component';
+import { EditBagMasterComponent } from './admin/popup/edit-bag-master/edit-bag-master.component';
+import { EditWarehouseMasterComponent } from './admin/popup/edit-warehouse-master/edit-warehouse-master.component';
+import { EditDispatchMasterComponent } from './admin/popup/edit-dispatch-master/edit-dispatch-master.component';
+import { EditCurrencyMasterComponent } from './admin/popup/edit-currency-master/edit-currency-master.component';
 import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency-master-add.component';
 
 @NgModule({
@@ -79,7 +87,15 @@ import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency
     ProductMasterAddComponent,
     QualityMaseterAddComponent,
     BagMasterAddComponent,
-    CurrencyMasterAddComponent,
+    EditVendorMasterComponent,
+    EditStructureMasterComponent,
+    EditProductMasterComponent,
+    EditQualityMasterComponent,
+    EditBagMasterComponent,
+    CurrencyMasterAddComponent ,
+    EditWarehouseMasterComponent,
+    EditDispatchMasterComponent,
+    EditCurrencyMasterComponent,
   ],
   imports: [
     BrowserModule,
