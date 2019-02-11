@@ -19,6 +19,7 @@ import { VenderMasterComponent } from './admin/vender-master/vender-master.compo
 import { WarehouseMasterComponent } from './admin/warehouse-master/warehouse-master.component';
 import { EditUsermanagementComponent } from './admin/popup/edit-usermanagement/edit-usermanagement.component';
 import { ConsignmentalDetailComponent } from './admin/consignmental-detail/consignmental-detail.component';
+import { ConsignmentWeightComponent } from './admin/consignment-weight/consignment-weight.component';
 import { ChangePasswordComponent } from './setting/change-password/change-password.component';
 import { UserManagementAddComponent } from './admin/user-management-add/user-management-add.component';
 import { VendorMasterAddComponent } from './admin/vendor-master-add/vendor-master-add.component';
@@ -37,6 +38,7 @@ import { EditQualityMasterComponent } from './admin/popup/edit-quality-master/ed
 import { EditStructureMasterComponent } from './admin/popup/edit-structure-master/edit-structure-master.component';
 import { EditVendorMasterComponent } from './admin/popup/edit-vendor-master/edit-vendor-master.component';
 import { EditWarehouseMasterComponent } from './admin/popup/edit-warehouse-master/edit-warehouse-master.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/authentication', pathMatch: 'full' },
@@ -64,6 +66,7 @@ const routes: Routes = [
       { path: 'Warehouse_Master', component: WarehouseMasterComponent, data: { 'title': 'Warehouse_Master' } },
       { path: 'edit_userMagagement', component: EditUsermanagementComponent, data: { 'title': 'edit_userMagagement' } },
       { path: 'Consignmental_Detail', component: ConsignmentalDetailComponent, data: { 'title': 'Consignmental_Detail' } },
+      { path: 'consignmentWeight', component: ConsignmentWeightComponent, data: { 'title': 'consignmentWeight' } },
       { path: 'changepassword', component: ChangePasswordComponent, data: { 'title': 'changepassword' } },
       { path: 'user_Management_add', component: UserManagementAddComponent, data: { 'title': 'user_Management_add' } },
       { path: 'vendorMaster_add', component: VendorMasterAddComponent, data: { 'title': 'vendorMaster_add' } },

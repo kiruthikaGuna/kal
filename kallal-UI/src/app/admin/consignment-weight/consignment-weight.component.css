@@ -12,7 +12,13 @@
 }
 /* Table style*/
 
- 
+ .mb-0{
+           margin-bottom: 0px !important;
+ }
+
+ .border{
+     border-bottom: grey;
+ }
 
 .tablecolor{
     background: white;

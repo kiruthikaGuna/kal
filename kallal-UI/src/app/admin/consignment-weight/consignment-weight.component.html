@@ -21,40 +21,38 @@
   </div>
 
 
-  <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r">
+  <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r  mb-0">
     <div class="panel-body ">
       <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
         <table class="table">
           <thead class="header-clr" style="background-color: #f0f0f7;">
             <tr class=" ">
-              <th>Consignment No.</th>
-              <th>From</th>
-              <th>To</th>
-              <th>Shipped Date</th>
-              <th>Arrived Date</th>
-              <th>No. of Bags</th>
+              <th>#</th>
+              <th>Bag</th>
+              <th>Barcode</th>
               <th>Loaded Weight</th>
               <th>Arrived Weight</th>
               <th>Weight Difference</th>
-              <th>Status</th>
             </tr>
           </thead>
           <tbody class="alternate_color body-clr">
             <tr *ngFor="let tablevalue of table1value">
-              <a (click)="OpenDial()" class="point"><td>{{tablevalue.ConsignmentNo}}</td></a>
-              <td>{{tablevalue.From}}</td>
-              <td>{{tablevalue.To}}</td>
-              <td>{{tablevalue.ShippedDate}}</td>
-              <td>{{tablevalue.ArrivedDate}}</td>
-              <td>{{tablevalue.NoOfBags}}</td>
+              <td>{{tablevalue.no}}</td>
+              <td>{{tablevalue.Bag}}</td>
+              <td>{{tablevalue.Barcode}}</td>
               <td>{{tablevalue.LoadedWeight}}</td>
               <td>{{tablevalue.ArrivedWeight}}</td>
               <td>{{tablevalue.WeightDifference}}</td>
-              <td>{{tablevalue.Status}}</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
+  </div>
+  <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="panel-body "style="background-color: #f0f0f7;">Net Loaded Weight</div>
+    <div class="panel-body border">Net Arrived Weight</div>
+  <div class="panel-body border">Total Bag Weight</div>
+  <div class="panel-body">Gross Weight</div>
   </div>
 </div>
