@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { EditUsermanagementComponent } from '../popup/edit-usermanagement/edit-usermanagement.component';
-import { AddUsermanagementComponent } from '../popup/add-usermanagement/add-usermanagement.component';
 
 @Component({
   selector: 'app-warehouse-master',
@@ -37,13 +36,7 @@ export class WarehouseMasterComponent implements OnInit {
   }
 
   add() {
-    const dialogRef = this.dialog.open(AddUsermanagementComponent, {
-      width: '500px',
-      //  data: daa,
-
-    });
-    dialogRef.afterClosed().subscribe(result => {
-    });
+  
   }
 
 

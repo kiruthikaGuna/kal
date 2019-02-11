@@ -30,7 +30,6 @@ import { CurrencyMasterComponent } from './admin/currency-master/currency-master
 import { ApprovelComponent } from './admin/approvel/approvel.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { PopupComponent } from './admin/popup/popup.component';
-import { AddUsermanagementComponent } from './admin/popup/add-usermanagement/add-usermanagement.component';
 import { EditUsermanagementComponent } from './admin/popup/edit-usermanagement/edit-usermanagement.component';
 import { SettingComponent } from './setting/setting.component';
 import { ChangePasswordComponent } from './setting/change-password/change-password.component';
@@ -70,7 +69,6 @@ import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency
     CurrencyMasterComponent,
     ApprovelComponent,
     PopupComponent,
-    AddUsermanagementComponent,
     EditUsermanagementComponent,
     SettingComponent,
     ChangePasswordComponent,
