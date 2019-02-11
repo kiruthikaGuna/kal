@@ -12,6 +12,19 @@ export class ConsignmentWeightComponent implements OnInit {
 
   ngOnInit() {
   }
+  table1value = [
+    {
+      no: '1', Bag: 'bag1', Barcode: '7676656', LoadedWeight: '34', ArrivedWeight: '40',
+      WeightDifference: '6'
+    },
+    {
+      no: '2', Bag: 'bag2', Barcode: '7676656', LoadedWeight: '34', ArrivedWeight: '40',
+      WeightDifference: '6'
+    },
+    {
+      no: '3', Bag: 'bag3', Barcode: '7676656', LoadedWeight: '34', ArrivedWeight: '40',
+      WeightDifference: '6'
+    },
+  ]
 
-  
 }

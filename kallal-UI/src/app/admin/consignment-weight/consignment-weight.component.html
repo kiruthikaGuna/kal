@@ -1,3 +1,58 @@
-<p>
-  consignment-weight works!
-</p>
+<div class="">
+  <div class="container col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <h3>Consignment details</h3>
+      </div>
+
+      <div class="col-md-9 col-sm-9 ">
+        <div class="floatRight">
+          <div class=" pad-top margLeft col-md-5">
+            <div class="input-group ">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r  mb-0">
+    <div class="panel-body ">
+      <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
+        <table class="table">
+          <thead class="header-clr" style="background-color: #f0f0f7;">
+            <tr class=" ">
+              <th>#</th>
+              <th>Bag</th>
+              <th>Barcode</th>
+              <th>Loaded Weight</th>
+              <th>Arrived Weight</th>
+              <th>Weight Difference</th>
+            </tr>
+          </thead>
+          <tbody class="alternate_color body-clr">
+            <tr *ngFor="let tablevalue of table1value">
+              <td>{{tablevalue.no}}</td>
+              <td>{{tablevalue.Bag}}</td>
+              <td>{{tablevalue.Barcode}}</td>
+              <td>{{tablevalue.LoadedWeight}}</td>
+              <td>{{tablevalue.ArrivedWeight}}</td>
+              <td>{{tablevalue.WeightDifference}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="panel-body border">Net Loaded Weight</div>
+    <div class="panel-body border">Net Arrived Weight</div>
+  <div class="panel-body border">Total Bag Weight</div>
+  <div class="panel-body">Gross Weight</div>
+  </div>
+</div>
