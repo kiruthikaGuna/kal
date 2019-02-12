@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material';
+import { BigMasterComponent } from '../../big-master/big-master.component';
+
 
 @Component({
   selector: 'app-edit-bag-master',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditBagMasterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<BigMasterComponent>, 
+    @Inject(MAT_DIALOG_DATA) public data: any) 
+    {
+      dialogRef.disableClose = true;
+     }
 
   ngOnInit() {
+  }
+ 
+  close(){
+    this.dialogRef.close();
   }
 
 }

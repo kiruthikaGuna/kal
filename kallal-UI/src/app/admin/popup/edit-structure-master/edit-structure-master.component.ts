@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material';
+import { StructureMasterComponent } from '../../structure-master/structure-master.component';
+
 
 @Component({
   selector: 'app-edit-structure-master',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditStructureMasterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<StructureMasterComponent>, 
+    @Inject(MAT_DIALOG_DATA) public data: any) 
+    {
+      dialogRef.disableClose = true;
+     }
 
   ngOnInit() {
   }
 
+  dropDwon = [
+    {value: 'cristiano', viewValue: 'cristiano'},
+    {value: 'messi', viewValue: 'messi'},
+  ];
+  
+  close(){
+    this.dialogRef.close();
+  }
 }

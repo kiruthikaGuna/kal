@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { EditUsermanagementComponent } from '../popup/edit-usermanagement/edit-usermanagement.component';
+import { EditStructureMasterComponent } from '../popup/edit-structure-master/edit-structure-master.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-structure-master',
@@ -9,7 +10,7 @@ import { EditUsermanagementComponent } from '../popup/edit-usermanagement/edit-u
 })
 export class StructureMasterComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router: Router) { }
 
   ngOnInit() {
   }
@@ -25,7 +26,7 @@ export class StructureMasterComponent implements OnInit {
 
 
   edit() {
-    const dialogRef = this.dialog.open(EditUsermanagementComponent, {
+    const dialogRef = this.dialog.open(EditStructureMasterComponent, {
       width: '500px',
       //  data: daa,
 
@@ -34,6 +35,9 @@ export class StructureMasterComponent implements OnInit {
     });
   }
 
-
+  
+  add() {
+    this.router.navigate(['/home/structureMaster_add']);
+  }
 
 }

@@ -91,13 +91,17 @@
               <div class="row">
                 <div class="col-md-5 col-sm-5">
                   <h5 class="padd">
-                    Role
+                    Location
                   </h5>
                 </div>
                 <div class="col-md-7 col-sm-7">
-                  <mat-form-field class="example-full-width">
-                    <input matInput type="email">
-                  </mat-form-field>
+                    <mat-form-field class="pad-0 ">
+                        <mat-select>
+                          <mat-option *ngFor="let samplevalue of location" [value]="samplevalue.value">
+                            {{ samplevalue.viewValue }}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
                 </div>
               </div>
             </div>
@@ -112,9 +116,13 @@
                   </h5>
                 </div>
                 <div class="col-md-7 col-sm-7">
-                  <mat-form-field class="example-full-width">
-                    <input matInput type="password">
-                  </mat-form-field>
+                    <mat-form-field class="pad-0 ">
+                        <mat-select>
+                          <mat-option *ngFor="let samplevalue of mobileuser" [value]="samplevalue.value">
+                            {{ samplevalue.viewValue }}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
                 </div>
               </div>
             </div>
@@ -123,7 +131,7 @@
               <div class="row">
                 <div class="col-md-5 col-sm-5">
                   <h5 class="padd">
-                    Status
+                    Role
                   </h5>
                 </div>
                 <div class="col-md-7 col-sm-7">
@@ -135,18 +143,42 @@
             </div>
           </div>
 
+
+          <div class="row">
+              <div class="col-md-5 col-sm-5">
+                <div class="row">
+                  <div class="col-md-5 col-sm-5">
+                    <h5 class="padd">
+                      Status
+                    </h5>
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                      <mat-form-field class="pad-0 ">
+                          <mat-select>
+                            <mat-option *ngFor="let samplevalue of mobileuser" [value]="samplevalue.value">
+                              {{ samplevalue.viewValue }}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1"></div>
+              <div class="col-md-5 col-sm-5">
+                
+              </div>
+            </div>
+
         </div>
 
 
 
-        <div class="row col-sm-12 col-md-12 pad-2">
-          <div class=" col-lg-6 text-center">
-            <button class="btn  btnpad">Save</button>
+        <div class="row col-sm-12 col-md-12 mr-t">
+            <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 text-center">
+              <button class="btn colorbtn1 btnpad">Save</button>
+              <button class="btn cancel btnpad" (click)="cancel()"> Cancel</button>
+            </div>
           </div>
-          <div class="col-lg-6  text-center">
-            <button class="btn cancel btnpad" (click)="cancel()"> Cancel</button>
-          </div>
-        </div>
 
       </div>
     </div>

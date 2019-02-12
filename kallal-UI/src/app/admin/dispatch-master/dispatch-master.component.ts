@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { EditUsermanagementComponent } from '../popup/edit-usermanagement/edit-usermanagement.component';
 import { EditDispatchMasterComponent } from '../popup/edit-dispatch-master/edit-dispatch-master.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dispatch-master',
@@ -10,7 +11,7 @@ import { EditDispatchMasterComponent } from '../popup/edit-dispatch-master/edit-
 })
 export class DispatchMasterComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router: Router) { }
 
   ngOnInit() {
   }
@@ -35,5 +36,8 @@ export class DispatchMasterComponent implements OnInit {
     });
   }
 
-  
+  add() {
+    this.router.navigate(['/home/dispatch_add']);
+  }
+
 }

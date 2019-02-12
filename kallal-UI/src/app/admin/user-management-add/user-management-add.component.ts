@@ -12,7 +12,20 @@ export class UserManagementAddComponent implements OnInit {
 
   ngOnInit() {
   }
+  location = [
+    { value: 'cristiano', viewValue: 'cristiano' },
+    { value: 'messi', viewValue: 'messi' },
+  ];
 
+  status = [
+    { value: 'cristiano', viewValue: 'cristiano' },
+    { value: 'messi', viewValue: 'messi' },
+  ];
+
+  mobileuser = [
+    { value: 'cristiano', viewValue: 'cristiano' },
+    { value: 'messi', viewValue: 'messi' },
+  ];
   cancel(){
     this.router.navigate(['/home/User_Management']);
   }

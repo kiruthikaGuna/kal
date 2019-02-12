@@ -119,6 +119,14 @@ tr:nth-child(even){
 .cont3{
     padding: 15px;
 }
+.right{
+    float: right;
+
+}
+
+.left{
+    float: left;
+}
 mat-card{
 
 padding: 8px;
@@ -128,3 +136,7 @@ padding: 8px;
     margin-top: 4px !important;
     margin-bottom: 0px !important;
 }
+.font{
+    font-size: 12px;
+}
+

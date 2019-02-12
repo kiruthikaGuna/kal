@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { EditUsermanagementComponent } from '../popup/edit-usermanagement/edit-usermanagement.component';
 import { MatDialog } from '@angular/material';
+import { EditCurrencyMasterComponent } from '../popup/edit-currency-master/edit-currency-master.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-currency-master',
@@ -9,7 +10,7 @@ import { MatDialog } from '@angular/material';
 })
 export class CurrencyMasterComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router:Router) { }
 
   ngOnInit() {
   }
@@ -26,13 +27,17 @@ export class CurrencyMasterComponent implements OnInit {
 
 
   edit() {
-    const dialogRef = this.dialog.open(EditUsermanagementComponent, {
+    const dialogRef = this.dialog.open(EditCurrencyMasterComponent, {
       width: '500px',
       //  data: daa,
 
     });
     dialogRef.afterClosed().subscribe(result => {
     });
+  }
+
+  add() {
+    this.router.navigate(['/home/currencyMaster_add']);
   }
 
 

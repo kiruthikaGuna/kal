@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { EditVendorMasterComponent } from '../popup/edit-vendor-master/edit-vendor-master.component';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { EditVendorMasterComponent } from '../popup/edit-vendor-master/edit-vend
 })
 export class VenderMasterComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router: Router) { }
 
   ngOnInit() {
   }
@@ -36,6 +37,8 @@ export class VenderMasterComponent implements OnInit {
     });
   }
 
-
+add(){
+  this.router.navigate(['/home/vendorMaster_add']);
+}
 
 }
