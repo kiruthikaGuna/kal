@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material';
+import { DispatchMasterComponent } from '../../dispatch-master/dispatch-master.component';
 
 @Component({
   selector: 'app-edit-dispatch-master',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditDispatchMasterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<DispatchMasterComponent>, 
+    @Inject(MAT_DIALOG_DATA) public data: any) 
+    {
+      dialogRef.disableClose = true;
+     }
 
   ngOnInit() {
   }
+  close(){
+    this.dialogRef.close();
+  }
 
+  dropDwon = [
+    {value: 'cristiano', viewValue: 'cristiano'},
+    {value: 'messi', viewValue: 'messi'},
+  ];
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { EditUsermanagementComponent } from '../popup/edit-usermanagement/edit-usermanagement.component';
+import { EditWarehouseMasterComponent } from '../popup/edit-warehouse-master/edit-warehouse-master.component';
 
 @Component({
   selector: 'app-warehouse-master',
@@ -26,7 +26,7 @@ export class WarehouseMasterComponent implements OnInit {
 
 
   edit() {
-    const dialogRef = this.dialog.open(EditUsermanagementComponent, {
+    const dialogRef = this.dialog.open(EditWarehouseMasterComponent, {
       width: '500px',
       //  data: daa,
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { EditUsermanagementComponent } from '../popup/edit-usermanagement/edit-usermanagement.component';
+import { EditDispatchMasterComponent } from '../popup/edit-dispatch-master/edit-dispatch-master.component';
 
 @Component({
   selector: 'app-dispatch-master',
@@ -25,7 +26,7 @@ export class DispatchMasterComponent implements OnInit {
 
 
   edit() {
-    const dialogRef = this.dialog.open(EditUsermanagementComponent, {
+    const dialogRef = this.dialog.open(EditDispatchMasterComponent, {
       width: '500px',
       //  data: daa,
 

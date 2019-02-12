@@ -1,3 +1,47 @@
-<p>
-  edit-warehouse-master works!
-</p>
+<div class="container col-md-12 col-sm-12">
+  <div>
+    <h4>Edit User</h4>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-sm-6 ">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Warehouse Code" value="">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Warehouse Name" value="">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Address" value="">
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="col-md-6 col-sm-6 ">
+      <form class="example-form">
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" value="">
+            </mat-form-field>        
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Mobile#" value="">
+            </mat-form-field>
+        <mat-form-field class="pad-0 matField dropdown">
+          <mat-select  data-toggle="dropdown"  placeholder="No.of Structure">
+            <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
+              {{ samplevalue.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </div>
+  </div>
+  <div class="row col-md-12 col-sm-12">
+      <div class="col-md-6 col-sm-6 text-center">
+          <button class="btn colorbtn"> Save</button>
+        </div>
+        <div class="col-md-6 co-sm-6 text-center" >
+          <button class="btn" (click)="close()"> Cancel</button>
+        </div>
+  </div>
+</div>

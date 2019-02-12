@@ -28,6 +28,6 @@ export class ConsignmentalDetailComponent implements OnInit {
 ]
 
 OpenDial(){
-  this.router.navigate(['/home/consignmentWeight']);
+  this.router.navigate(['home/consignmentWeight']);
 }
 }

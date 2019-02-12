@@ -47,3 +47,26 @@ table a
 .point{
     cursor: pointer;
 }
+
+
+
+.btnpad{
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #ec8023;
+    color: #ffffff;
+   font-weight: 600;
+
+}
+
+.cancel{
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #43425D;
+    color: #ffffff;
+   font-weight: 600;
+
+}
+.colorbtn1{
+    margin-right: 40px;
+}

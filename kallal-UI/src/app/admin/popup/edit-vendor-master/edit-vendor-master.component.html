@@ -6,38 +6,48 @@
       <div class="col-md-6 col-sm-6 ">
         <form class="example-form">
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="First Name" value="">
+            <input matInput placeholder="Company Code" value="">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Company Name" value="">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Address" value="">
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
             <input matInput placeholder="Email" value="">
           </mat-form-field>
-  
+
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Department" value="">
+            <input matInput placeholder="Phone#" value="">
           </mat-form-field>
   
-          <mat-form-field class="example-full-width">
-            <input matInput placeholder="Mobile User" value="">
-          </mat-form-field>
         </form>
       </div>
       <div class="col-md-6 col-sm-6 ">
         <form class="example-form">
+         
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Last Name" value="">
+            <input matInput placeholder="License#" value="">
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Phone" value="">
+            <input matInput placeholder="GST" value="">
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Role" value="">
+            <input matInput placeholder="Contact person" value="">
           </mat-form-field>
-  
-          <mat-form-field class="example-full-width">
-            <input matInput placeholder="Status" value="">
+
+          <mat-form-field class="pad-0 matField dropdown">
+            <mat-select  data-toggle="dropdown"  placeholder="Dispatch">
+              <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
+                {{ samplevalue.viewValue }}
+              </mat-option>
+            </mat-select>
           </mat-form-field>
         </form>
       </div>
