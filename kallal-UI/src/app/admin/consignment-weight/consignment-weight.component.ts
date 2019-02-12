@@ -27,4 +27,7 @@ export class ConsignmentWeightComponent implements OnInit {
     },
   ]
 
+  cancel() {
+    this.router.navigate(['/home/Consignmental_Detail']);
+  }
 }

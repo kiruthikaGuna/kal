@@ -16,7 +16,7 @@
             </div>
           </div>
           <div class="col-md-4 pad-top ">
-            <button class="btn colorbtn" (click)="add()"><i class="fa fa-plus"></i> Home</button>
+            <button class="btn colorbtn" (click)="add()"><i class="fa fa-plus"></i> Add</button>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
 
 
   <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r">
-    <div class="panel-body ">
+    <div class="panel-body padd">
       <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
         <table class="table">
           <thead class="header-clr" style="background-color: #f0f0f7;">
@@ -34,16 +34,15 @@
               <th>Quality Code</th>
               <th>Quality Name</th>
               <th></th>
-              <th></th>
-              </tr>
+                            </tr>
           </thead>
           <tbody class="alternate_color body-clr">
             <tr *ngFor="let tablevalue of table1value">
               <td>{{tablevalue.no}}</td>
               <td>{{tablevalue.QualityCode}}</td>
               <td>{{tablevalue.QualityName}}</td>
-              <td class="alignend "> <img src="assets/img/edit.png" (click)="edit()" /></td>
-              <td class="alignend "> <img src="assets/img/delete.png" /></td>
+              <td class="alignend disply cursr"> <img src="assets/img/edit.png" (click)="edit()"/>&nbsp;&nbsp;&nbsp;
+                <img src="assets/img/delete.png" /></td>
             </tr>
 
           </tbody>

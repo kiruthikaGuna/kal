@@ -14,7 +14,21 @@
     background-color: #DF7426;
     color: white;
 }
-
+.disply{
+        white-space: nowrap
+}
+.cursr{
+    cursor: pointer;
+}
+.padd{
+    padding-left: 0px !important;
+    padding-right: 15px !important;
+    padding-top:15px !important;
+    padding-bottom: 15px !important;
+}
+.m-rt{
+    margin-right: 7px;
+}
 .marginTable{
     margin-top: 14px;
 }

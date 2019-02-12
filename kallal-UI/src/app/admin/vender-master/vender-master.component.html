@@ -25,7 +25,7 @@
 
 
   <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r">
-    <div class="panel-body ">
+    <div class="panel-body padd">
       <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
         <table class="table">
           <thead class="header-clr" style="background-color: #f0f0f7;">
@@ -41,8 +41,7 @@
               <th class="alignend ">Contact person</th>
               <th class="alignend ">Dispatch</th>
               <th class="alignend"></th>
-              <th class="alignend "></th>
-            </tr>
+                          </tr>
           </thead>
           <tbody class="alternate_color body-clr">
             <tr *ngFor="let tablevalue of table2value">
@@ -64,9 +63,9 @@
                   </mat-select>
                 </mat-form-field>
               </td>
-              <td class="alignend "> <img src="assets/img/edit.png" (click)="edit()" /></td>
-              <td class="alignend "> <img src="assets/img/delete.png" /></td>
-            </tr>
+              <td class="alignend disply cursr"> <img src="assets/img/edit.png" (click)="edit()"/>&nbsp;&nbsp;&nbsp;
+                <img src="assets/img/delete.png" /></td>
+                        </tr>
 
           </tbody>
         </table>

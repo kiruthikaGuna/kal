@@ -2,10 +2,28 @@
     text-align: center;
 }
 
-.colorbtn{
-    background-color: #DF7426;
-    color: white;
+mat-form-field{
+    width: 100%;
 }
-.btn{
-    width: 65%;
+
+.mr{
+    margin-right: 17px;
+}
+
+.btnpad:hover{
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #ec8023;
+    color: #ffffff;
+   font-weight: 600;
+
+}
+
+.btnpad{
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #43425D;
+    color: #ffffff;
+   font-weight: 600;
+
 }

@@ -32,6 +32,23 @@
    
 }
 
+.disply{
+    white-space: nowrap
+}
+.m-rt{
+margin-right: 7px;
+}
+
+.cursr{
+    cursor: pointer;
+}
+
+.padd{
+    padding-left: 0px !important;
+    padding-right: 15px !important;
+    padding-top:15px !important;
+    padding-bottom: 15px !important;
+}
 
 tr:nth-child(even){
     background: #F5F6FA;

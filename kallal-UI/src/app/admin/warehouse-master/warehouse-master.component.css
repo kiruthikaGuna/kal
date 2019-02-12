@@ -10,6 +10,17 @@
     margin-left: 60px;
 }
 
+.disply{
+    white-space: nowrap
+}
+.m-rt{
+margin-right: 7px;
+}
+.cursr{
+    cursor: pointer;
+}
+
+
 .colorbtn{
     background-color: #DF7426;
     color: white;

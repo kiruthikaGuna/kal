@@ -22,7 +22,7 @@
 
 
   <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r  mb-0">
-    <div class="panel-body ">
+    <div class="panel-body padd">
       <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
         <table class="table">
           <thead class="header-clr" style="background-color: #f0f0f7;">
@@ -70,9 +70,9 @@
   <div class="row col-sm-12 col-md-12 mr-t">
 
     <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 text-center">
-      <button class="btn colorbtn1 btnpad">Done</button>
+      <button class="btn colorbtn1 btnpad" (click)="cancel()">Done</button>
 
-      <button class="btn cancel btnpad">Cancel</button>
+      <button class="btn cancel btnpad" (click)="cancel()">Cancel</button>
     </div>
   </div>
 

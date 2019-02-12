@@ -156,6 +156,13 @@
     height: 51px;
   }
   
+  .pad{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    line-height: 29px !important;
+  }
+  
+  
   .dropdown .dropbtn {
     font-size: 14px;
     border: none;

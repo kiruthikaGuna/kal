@@ -11,10 +11,20 @@
     margin-top: 10%;
 }
 
-.btnpad{
+
+.btnpad:hover{
     padding-left: 40px;
     padding-right: 40px;
     background: #ec8023;
+    color: #ffffff;
+   font-weight: 600;
+
+}
+
+.btnpad{
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #43425D;
     color: #ffffff;
    font-weight: 600;
 
