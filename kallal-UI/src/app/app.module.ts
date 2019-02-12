@@ -4,6 +4,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
+import { jqxBarGaugeComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxbargauge';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+
 import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -53,6 +56,7 @@ import { EditWarehouseMasterComponent } from './admin/popup/edit-warehouse-maste
 import { EditDispatchMasterComponent } from './admin/popup/edit-dispatch-master/edit-dispatch-master.component';
 import { EditCurrencyMasterComponent } from './admin/popup/edit-currency-master/edit-currency-master.component';
 import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency-master-add.component';
+import { jqxChartComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxchart';
 
 
 @NgModule({
@@ -99,13 +103,16 @@ import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency
     EditWarehouseMasterComponent,
     EditDispatchMasterComponent,
     EditCurrencyMasterComponent,
-    CurrencyMasterAddComponent
-  ],
+    CurrencyMasterAddComponent,
+    jqxBarGaugeComponent,
+    jqxChartComponent,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule.forRoot(),
     MatSelectModule,
     BrowserAnimationsModule,

@@ -93,16 +93,13 @@ tr:nth-child(even){
     .bdg{
    
         border: 2px solid E7965C;
-        padding: 2px;
         border-radius: 25px;
     }
 .shifont{
     color:#4D4F5C;
 }
 
-.tablecolor{
-margin-top: -12px;
-}
+
 
 .panel-body {
     padding: 0px;
@@ -135,6 +132,10 @@ mat-card{
 padding: 8px;
 }
 
+.h3cls{
+    margin-top: 4px !important;
+    margin-bottom: 0px !important;
+}
 .font{
     font-size: 12px;
 }
