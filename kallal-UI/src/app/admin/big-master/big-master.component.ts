@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { EditUsermanagementComponent } from '../popup/edit-usermanagement/edit-usermanagement.component';
 import { MatDialog } from '@angular/material';
+import { EditBagMasterComponent } from '../popup/edit-bag-master/edit-bag-master.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-big-master',
@@ -9,7 +10,7 @@ import { MatDialog } from '@angular/material';
 })
 export class BigMasterComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router: Router) { }
 
   ngOnInit() {
   }
@@ -26,7 +27,7 @@ export class BigMasterComponent implements OnInit {
 
 
   edit() {
-    const dialogRef = this.dialog.open(EditUsermanagementComponent, {
+    const dialogRef = this.dialog.open(EditBagMasterComponent, {
       width: '500px',
       //  data: daa,
 
@@ -35,5 +36,7 @@ export class BigMasterComponent implements OnInit {
     });
   }
 
-
+  add() {
+    this.router.navigate(['/home/BagMaster_add']);
+  }
 }

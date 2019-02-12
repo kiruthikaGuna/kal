@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { EditWarehouseMasterComponent } from '../popup/edit-warehouse-master/edit-warehouse-master.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-warehouse-master',
@@ -9,7 +10,7 @@ import { EditWarehouseMasterComponent } from '../popup/edit-warehouse-master/edi
 })
 export class WarehouseMasterComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router:Router) { }
 
   ngOnInit() {
   }
@@ -35,9 +36,11 @@ export class WarehouseMasterComponent implements OnInit {
     });
   }
 
-  add() {
-  
-  }
+    
+add() {
+  this.router.navigate(['/home/warehouse_add']);
+}
+
 
 
 }

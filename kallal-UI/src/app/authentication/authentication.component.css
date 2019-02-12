@@ -1,14 +1,11 @@
-/* .logInContainer{
-     display:block;
-      height: 100vh;
-       width: 100vw; 
-    /* background: url(../../assets/img/tyrebg.png);  */
-   /* background-size: cover; 
-} */ 
+
+.bg-color{
+background: #ffffff;
+}
 
  .logo{
     width:100%;
-    height:100%;
+    height:100vh;
     max-height: 100vh;
  }
 

@@ -122,7 +122,20 @@ margin-top: -12px;
 .cont3{
     padding: 15px;
 }
+.right{
+    float: right;
+
+}
+
+.left{
+    float: left;
+}
 mat-card{
 
 padding: 8px;
 }
+
+.font{
+    font-size: 12px;
+}
+

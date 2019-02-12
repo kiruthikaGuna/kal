@@ -16,16 +16,27 @@
            margin-bottom: 0px !important;
  }
 
- .border{
-     border-bottom: grey;
- }
 
 .tablecolor{
     background: white;
    
 }
 
+.alignend{
+    text-align: center;
+}
 
+.bg{
+    background: #FBF0E8;
+}
+
+.mt-20{
+    margin-top: 20px;
+    }
+
+.rt{
+    text-align: right;
+}
 tr:nth-child(even){
     background: #F5F6FA;
     }
