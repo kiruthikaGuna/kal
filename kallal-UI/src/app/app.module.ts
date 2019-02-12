@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { jqxBarGaugeComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxbargauge';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 import {ReactiveFormsModule} from '@angular/forms';
 
@@ -104,13 +105,14 @@ import { jqxChartComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxcha
     EditCurrencyMasterComponent,
     CurrencyMasterAddComponent,
     jqxBarGaugeComponent,
-    jqxChartComponent
+    jqxChartComponent,
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule.forRoot(),
     MatSelectModule,
     BrowserAnimationsModule,
