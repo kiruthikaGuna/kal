@@ -45,6 +45,7 @@ import { StructuresComponent } from './warehouse/structures/structures.component
 import { TransportHistoryComponent } from './warehouse/transport-history/transport-history.component';
 import { TransportListComponent } from './warehouse/transport-list/transport-list.component';
 import { VehicleDetailsComponent } from './warehouse/vehicle-details/vehicle-details.component';
+import { TransportDetailsComponent } from './warehouse/transport-details/transport-details.component';
 
 
 const routes: Routes = [
@@ -99,7 +100,8 @@ const routes: Routes = [
       { path: 'TransportHistory', component: TransportHistoryComponent, data: { 'title': 'TransportHistory' } },
       { path: 'TransportList', component: TransportListComponent, data: { 'title': 'TransportList' } },
       { path: 'VechicleDetails', component: VehicleDetailsComponent, data: { 'title': 'VechicleDetails' } },
-    ]
+      { path: 'TransportDetails', component: TransportDetailsComponent, data: { 'title': 'TransportDetails' } },
+   ]
    }
 ];
 

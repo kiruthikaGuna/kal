@@ -1,3 +1,133 @@
-<p>
-  shipping works!
-</p>
+<div class="">
+  <div class="container col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <h3>Shipping Details</h3>
+      </div>
+
+      <div class="col-md-2 col-sm-2">
+        <mat-form-field class="pad-0 matField">
+          <mat-select>
+            <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
+              {{ samplevalue.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-5 col-sm-7 btnTop ">
+        <button class="btn btnpad colorbtn2 ">start scan</button>
+
+        <button class="btn btnpad ">stop scan</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-lg-2 col-sm-3">
+        <label class="col-md-5 col-sm-5 labelTop pad-0">Vechile No.</label>
+        <div class="col-md-7 col-sm-7 pad-0">
+          <mat-form-field class="example-full-width  pad-0 inputWidht">
+            <input matInput type="text">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-sm-3 ">
+        <label class="col-md-4 col-sm-6 labelTop pad-0">Lock No.</label>
+        <div class="col-md-8 col-sm-6">
+          <mat-form-field class="example-full-width pad-0 inputWidht">
+            <input matInput type="text">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-8 col-lg-5 col-sm-6 pad-0">
+        <label class="col-md-3 col-sm-3 labelTop pad-0">Transported From</label>
+        <div class="col-md-3 col-sm-3 pad-0 ">
+          <mat-form-field class="inputWidht ">
+            <mat-select>
+              <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
+                {{ samplevalue.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <label class="col-md-2 col-sm-3 labelTop pad-0">To</label>
+        <div class="col-md-4 col-sm-3 pad-0">
+          <mat-form-field class=" inputWidht">
+            <mat-select>
+              <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
+                {{ samplevalue.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-3 pad-0">
+        <div class="col-md-7 col-sm-8 labelTop pad-0">
+          <button class="btn insidebtn ">Generate Batchcode</button>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <mat-form-field class="example-full-width inputWidht pad-0">
+            <input matInput type="text">
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r  mb-0">
+    <div class="panel-body padd">
+      <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
+        <table class="table">
+          <thead class="header-clr" style="background-color: #f0f0f7;">
+            <tr class=" ">
+              <th>#</th>
+              <th>Bag</th>
+              <th>Barcode</th>
+              <th>Weight</th>
+              <th>Scan Date & Time</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="alternate_color body-clr">
+            <tr *ngFor="let tablevalue of table1value">
+              <td>{{tablevalue.no}}</td>
+              <td>{{tablevalue.Bag}}</td>
+              <td>{{tablevalue.Barcode}}</td>
+              <td>{{tablevalue.Weight}}</td>
+              <td>{{tablevalue.Date}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="panel bg panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12 margn">
+    <div class="col-lg-12 panel mt-20 bg">
+      <div class="col-lg-offset-8 col-lg-2 rt">Net Loaded Weight</div>
+      <div class="col-lg-1 rt">170 kg</div>
+    </div>
+    <div class="col-lg-12 panel bg">
+      <div class="col-lg-offset-8 col-lg-2 rt">Total Bag Weight</div>
+      <div class="col-lg-1 rt">2 kg</div>
+    </div>
+    <div class="col-lg-12 panel bg">
+      <div class="col-lg-offset-8 col-lg-2 rt">Gross Weight</div>
+      <div class="col-lg-1 rt">167 kg</div>
+    </div>
+  </div>
+  <div class="row col-sm-12 col-md-12 mr-t">
+
+    <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 text-center">
+      <button class="btn colorbtn1 btnpad" (click)="done()">Done</button>
+
+      <button class="btn cancel btnpad" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+
+</div>

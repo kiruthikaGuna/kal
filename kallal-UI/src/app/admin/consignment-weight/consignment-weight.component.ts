@@ -9,9 +9,6 @@ import { Router } from '@angular/router';
 export class ConsignmentWeightComponent implements OnInit {
 
   constructor(private router: Router) { }
-
-  ngOnInit() {
-  }
   table1value = [
     {
       no: '1', Bag: 'bag1', Barcode: '7676656', LoadedWeight: '34', ArrivedWeight: '40',
@@ -25,7 +22,10 @@ export class ConsignmentWeightComponent implements OnInit {
       no: '3', Bag: 'bag3', Barcode: '7676656', LoadedWeight: '34', ArrivedWeight: '40',
       WeightDifference: '6'
     },
-  ]
+  ];
+
+  ngOnInit() {
+  }
 
   cancel() {
     this.router.navigate(['/home/Consignmental_Detail']);

@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
         const login_user = {'userid': this.expressForm.controls.email.value, 'user_name': 'test', 'role': 'warehouse'};
         localStorage.setItem('userid', login_user.userid);
         localStorage.setItem('login_user', JSON.stringify(login_user));
-        this.router.navigate(['/home/']);
+        this.router.navigate(['/home/TransportList']);
       } else if (this.expressForm.controls.email.value === 'dispatch@123.com' && this.expressForm.controls.password.value === 'dispatch') {
         const login_user = {'userid': this.expressForm.controls.email.value, 'user_name': 'test', 'role': 'dispatch'};
         localStorage.setItem('userid', login_user.userid);

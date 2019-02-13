@@ -65,6 +65,7 @@ import { RepackingComponent } from './warehouse/repacking/repacking.component';
 import { ShippingComponent } from './warehouse/shipping/shipping.component';
 import { StructuresComponent } from './warehouse/structures/structures.component';
 import { TransportHistoryComponent } from './warehouse/transport-history/transport-history.component';
+import { TransportDetailsComponent } from './warehouse/transport-details/transport-details.component';
 
 
 @NgModule({
@@ -122,6 +123,7 @@ import { TransportHistoryComponent } from './warehouse/transport-history/transpo
     ShippingComponent,
     StructuresComponent,
     TransportHistoryComponent,
+    TransportDetailsComponent,
     ],
   imports: [
     BrowserModule,
