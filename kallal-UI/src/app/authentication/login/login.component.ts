@@ -34,7 +34,21 @@ export class LoginComponent implements OnInit {
   public signIn() {
     if (this.expressForm.valid) {
       if (this.expressForm.controls.email.value === 'admin@123.com' && this.expressForm.controls.password.value === 'admin') {
+        const login_user = {'userid': this.expressForm.controls.email.value, 'user_name': 'test', 'role': 'admin'};
+        localStorage.setItem('userid', login_user.userid);
+        localStorage.setItem('login_user', JSON.stringify(login_user));
         this.router.navigate(['/home/dashboard']);
+      } else if (this.expressForm.controls.email.value === 'warehouse@123.com'
+      && this.expressForm.controls.password.value === 'warehouse') {
+        const login_user = {'userid': this.expressForm.controls.email.value, 'user_name': 'test', 'role': 'warehouse'};
+        localStorage.setItem('userid', login_user.userid);
+        localStorage.setItem('login_user', JSON.stringify(login_user));
+        this.router.navigate(['/home/']);
+      } else if (this.expressForm.controls.email.value === 'dispatch@123.com' && this.expressForm.controls.password.value === 'dispatch') {
+        const login_user = {'userid': this.expressForm.controls.email.value, 'user_name': 'test', 'role': 'dispatch'};
+        localStorage.setItem('userid', login_user.userid);
+        localStorage.setItem('login_user', JSON.stringify(login_user));
+        this.router.navigate(['/home/']);
       } else {
         return false;
       }
