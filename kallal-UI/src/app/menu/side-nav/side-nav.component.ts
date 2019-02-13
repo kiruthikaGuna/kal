@@ -16,6 +16,7 @@ export class SideNavComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.login_user = JSON.parse(localStorage.getItem('login_user'));
   }
   // active class set
   brumbCrumb(menuname) {
@@ -24,6 +25,11 @@ export class SideNavComponent implements OnInit {
 
   settings() {
     this.router.navigate(['/home/changepassword']);
+  }
+
+  logout() {
+    localStorage.clear();
+    this.router.navigate(['/authentication']);
   }
 
 }

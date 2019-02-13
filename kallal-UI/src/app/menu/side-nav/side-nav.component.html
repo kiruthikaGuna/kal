@@ -5,7 +5,7 @@
                 <li class="pad-0 white">
                     <img src="./assets/img/logo@2x.png" class="center">
                 </li>
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['dashboard']" [ngClass]="(menu == 'dashboard')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('dashboard')">
                         <img src="assets/img/Dashboard.png" />
@@ -13,7 +13,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['User_Management']" [ngClass]="(menu == 'User_Management')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('User_Management')">
                         <img src="assets/img/User_Management.png" />
@@ -21,7 +21,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Vender_Master']" [ngClass]="(menu == 'Vender_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Vender_Master')">
                         <img src="assets/img/Vendor_Master.png" />
@@ -29,7 +29,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Dispatch_Master']" [ngClass]="(menu == 'Dispatch_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Dispatch_Master')">
                         <img src="assets/img/Dispatch_Master.png" />
@@ -37,7 +37,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Warehouse_Master']" [ngClass]="(menu == 'Warehouse_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Warehouse_Master')">
                         <img src="assets/img/Warehouse_Master.png" />
@@ -45,7 +45,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Structure_Master']" [ngClass]="(menu == 'Structure_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Structure_Master')">
                         <img src="assets/img/Structure_Master.png" />
@@ -53,7 +53,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Product_Master']" [ngClass]="(menu == 'Product_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Product_Master')">
                         <img src="assets/img/Product_Master.png" />
@@ -61,7 +61,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Quality_Master']" [ngClass]="(menu == 'Quality_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Quality_Master')">
                         <img src="assets/img/Quality_Master.png" />
@@ -69,7 +69,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Big_Master']" [ngClass]="(menu == 'Big_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Big_Master')">
                         <img src="assets/img/Bag_Master.png" />
@@ -77,7 +77,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Currency_Master']" [ngClass]="(menu == 'Currency_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Currency_Master')">
                         <img src="assets/img/Currency_Master.png" />
@@ -85,7 +85,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Approvel']" [ngClass]="(menu == 'Approvel')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Approvel')">
                         <img src="assets/img/Approval.png" />
@@ -93,7 +93,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='admin'">
                     <a [routerLink]="['Consignmental_Detail']" [ngClass]="(menu == 'Consignmental_Detail')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Consignmental_Detail')">
                         <img src="assets/img/Conversion_Master.png" />
@@ -101,7 +101,8 @@
                     </a>
                 </li>
 
-                <li>
+                <!-- Warehouse menu's start -->
+                <li *ngIf="this.login_user.role=='warehouse'">
                     <a [routerLink]="['TransportList']" [ngClass]="(menu == 'TransportList')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('TransportList')">
                         <img src="assets/img/Conversion_Master.png" />
@@ -109,7 +110,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='warehouse'">
                     <a [routerLink]="['VechicleDetails']" [ngClass]="(menu == 'VechicleDetails')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('VechicleDetails')">
                         <img src="assets/img/Conversion_Master.png" />
@@ -117,7 +118,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='warehouse'">
                     <a [routerLink]="['Scan']" [ngClass]="(menu == 'Scan')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Scan')">
                         <img src="assets/img/Conversion_Master.png" />
@@ -126,7 +127,7 @@
                 </li>
 
                 
-                <li>
+                <li *ngIf="this.login_user.role=='warehouse'">
                     <a [routerLink]="['Repacking']" [ngClass]="(menu == 'Repacking')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Repacking')">
                         <img src="assets/img/Conversion_Master.png" />
@@ -134,7 +135,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='warehouse'">
                     <a [routerLink]="['Shipping']" [ngClass]="(menu == 'Shipping')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Shipping')">
                         <img src="assets/img/Conversion_Master.png" />
@@ -142,7 +143,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='warehouse'">
                     <a [routerLink]="['Structures']" [ngClass]="(menu == 'Structures')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Structures')">
                         <img src="assets/img/Conversion_Master.png" />
@@ -150,13 +151,14 @@
                     </a>
                 </li>
 
-                <li>
+                <li *ngIf="this.login_user.role=='warehouse'">
                     <a [routerLink]="['TransportHistory']" [ngClass]="(menu == 'TransportHistory')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('TransportHistory')">
                         <img src="assets/img/Conversion_Master.png" />
                         <span class="leftpad"> Transport History </span>
                     </a>
                 </li>
+                <!-- End of Warehouse menu's -->
             </ul>
         </div>
 
