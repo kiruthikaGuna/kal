@@ -10,24 +10,13 @@ export class DashboardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-  values: number[] = [102, 115];
-
-  sampleData: any[] = [
+  sampleData = [
     { Day: 'srilank', InTransit: 30, ProcessShipment: 0 },
     { Day: 'singapore', InTransit: 25, ProcessShipment: 25 },
     { Day: 'Malaysia', InTransit: 25, ProcessShipment: 25 },
   ];
   padding: any = { left: 5, top: 5, right: 5, bottom: 5 };
   titlePadding: any = { left: 90, top: 0, right: 0, bottom: 10 };
-  getWidth(): any {
-    if (document.body.offsetWidth < 850) {
-      return '90%';
-    }
-
-    return 850;
-  }
   xAxis: any =
     {
       dataField: 'Day',
@@ -60,23 +49,51 @@ export class DashboardComponent implements OnInit {
         columnsGapPercent: 50,
         seriesGapPercent: 0,
         series: [
-          { dataField: 'InTransit', displayText: 'InTransit', color: "#DF7426" },
-          { dataField: 'ProcessShipment', displayText: 'ProcessShipment', color: "#6B7378" },
+          { dataField: 'InTransit', displayText: 'InTransit', color: '#DF7426' },
+          { dataField: 'ProcessShipment', displayText: 'ProcessShipment', color: '#6B7378' },
         ]
       }
     ];
-
-
-    
+  title = 'app';
+  public pieChartLabels: string[] = ['salem', 'Mumbai'];
+  public pieChartData: number[] = [21, 39];
+  public pieChartType = 'pie';
+  public pieChartOptions: any = {
+    'backgroundColor': [
+      '#DF7426',
+      '#6B7378',
+    ]
+  };
+  public pieChartColors: Array<any> = [{
+    backgroundColor: ['#DF7426', '#6B7378'],
+  }];
 
   table1value = [
-    { no: 1, Product: 23141, NoofBags: '2', Totalweight: '50Kg'},
-    { no: '2', Product: '96512', NoofBags: '4', Totalweight: '75Kg'},
+    { no: 1, Product: 23141, NoofBags: '2', Totalweight: '50Kg' },
+    { no: 2, Product: '96512', NoofBags: '4', Totalweight: '75Kg' },
   ];
 
   dropDwon = [
-    {value: 'india', viewValue: 'india'},
-    {value: 'USA', viewValue: 'messi'},
+    { value: 'india', viewValue: 'india' },
+    { value: 'USA', viewValue: 'messi' },
   ];
+
+  ngOnInit() {
+  }
+
+  getWidth(): any {
+    if (document.body.offsetWidth < 850) {
+      return '90%';
+    }
+
+    return 850;
+  }
+  public chartClicked(e: any): void {
+    console.log(e);
+  }
+  public chartHovered(e: any): void {
+    console.log(e);
+  }
+
 
 }

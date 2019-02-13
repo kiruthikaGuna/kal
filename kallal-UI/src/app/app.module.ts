@@ -6,7 +6,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { jqxBarGaugeComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxbargauge';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-
+import { ChartsModule } from 'ng2-charts';
 import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -113,12 +113,14 @@ import { jqxChartComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxcha
     ReactiveFormsModule,
     FormsModule,
     ReactiveFormsModule,
+// tslint:disable-next-line: deprecation
     NgbModule.forRoot(),
     MatSelectModule,
     BrowserAnimationsModule,
     MatDialogModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    ChartsModule
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]

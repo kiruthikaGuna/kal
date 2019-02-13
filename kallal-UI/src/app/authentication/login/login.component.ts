@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
   public signIn() {
     if (this.expressForm.valid) {
       if (this.expressForm.controls.email.value === 'admin@123.com' && this.expressForm.controls.password.value === 'admin') {
-        this.router.navigate(['home/dashboard']);
+        this.router.navigate(['/home/dashboard']);
       } else {
         return false;
       }

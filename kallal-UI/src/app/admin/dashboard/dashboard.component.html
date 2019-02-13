@@ -129,8 +129,14 @@
                 <p class="shifont">Delivery by Destination</p>
               </div>
             </div>
-            <jqxBarGauge [width]="500" [height]="300" [max]="150" [colorScheme]="'scheme02'" [values]="values">
-            </jqxBarGauge>
+            <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [colors]="pieChartColors"
+            [options]="pieChartOptions"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
           </div>
 
         </div>
