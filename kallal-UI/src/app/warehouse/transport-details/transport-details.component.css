@@ -75,27 +75,6 @@ tr:nth-child(even){
 
 }
 
-.insidebtn{
-    margin-top: -4px;
-    background: #ec8023;
-    color: #ffffff;
-   font-weight: 600;
-}
-
-.insidebtn{
-    margin-top: -4px;
-    background: #43425D;
-    color: #ffffff;
-   font-weight: 600;
-}
-
-.insidebtn:hover{
-    margin-top: -4px;
-    background: #ec8023;
-    color: #ffffff;
-   font-weight: 600;
-
-}
 
 .padd{
     padding-left: 0px !important;
@@ -114,20 +93,4 @@ tr:nth-child(even){
 }
 .colorbtn1{
     margin-right: 40px;
-}
-
-.colorbtn2{
-    margin-right: 20px;
-}
-.btnTop{
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.labelTop{
-    margin-top: 20px;
-    font-size: 12px;
-}
-.inputWidht{
-    width: 100px;
 }

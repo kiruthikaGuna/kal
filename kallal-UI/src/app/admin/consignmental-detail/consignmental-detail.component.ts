@@ -1,7 +1,6 @@
 import { MatDialog } from '@angular/material';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ConsignmentWeightComponent } from '../consignment-weight/consignment-weight.component';
 
 @Component({
   selector: 'app-consignmental-detail',
@@ -10,7 +9,8 @@ import { ConsignmentWeightComponent } from '../consignment-weight/consignment-we
 })
 export class ConsignmentalDetailComponent implements OnInit {
 
-  constructor(public dialog: MatDialog, private router: Router) { }
+  constructor( private router: Router) { }
+
   table1value = [
     {
       ConsignmentNo: 'TVS122545', From: 'Singapore', To: 'Salem', ShippedDate: '15 Feb 2019',

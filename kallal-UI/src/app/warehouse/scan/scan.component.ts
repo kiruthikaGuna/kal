@@ -20,9 +20,9 @@ export class ScanComponent implements OnInit {
   }
 ];
 
-  ngOnInit() {}
+  ngOnInit() { }
 
-OpenDial() {
-  this.router.navigate(['/home/VehicleDetails']);
-}
+  OpenDial() {
+    this.router.navigate(['/home/VehicleDetails']);
+  }
 }
