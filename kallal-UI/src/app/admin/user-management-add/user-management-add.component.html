@@ -6,180 +6,156 @@
 
     <div class="panel panel-default  col-sm-12 col-md-12 ">
       <div class="panel-body">
-        <div class="  col-sm-12 col-md-12 ">
+        <div class="row col-sm-12 col-md-12 ">
 
-          <div class="row">
+
+          <div class="row col-md-5 col-sm-5">
             <div class="col-md-5 col-sm-5">
-              <div class="row">
-                <div class="col-md-5 col-sm-5">
-                  <h5 class="padd">
-                    First Name
-                  </h5>
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <mat-form-field class="example-full-width">
-                    <input matInput type="password">
-                  </mat-form-field>
-                </div>
-              </div>
+              <label class="padd">
+                First Name
+              </label>
             </div>
-            <div class="col-md-1 col-sm-1"></div>
-            <div class="col-md-5 col-sm-5">
-              <div class="row">
-                <div class="col-md-5 col-sm-5">
-                  <h5 class="padd">
-                    Last Name
-                  </h5>
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <mat-form-field class="example-full-width">
-                    <input matInput type="email">
-                  </mat-form-field>
-                </div>
-              </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="password">
+              </mat-form-field>
             </div>
           </div>
 
-          <div class="row">
+          <div class="row col-md-offset-1 col-sm-offset-1 col-md-5 col-sm-5">
             <div class="col-md-5 col-sm-5">
-              <div class="row">
-                <div class="col-md-5 col-sm-5">
-                  <h5 class="padd">
-                    E-Mail
-                  </h5>
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <mat-form-field class="example-full-width">
-                    <input matInput type="password">
-                  </mat-form-field>
-                </div>
-              </div>
+              <label class="padd">
+                Last Name
+              </label>
             </div>
-            <div class="col-md-1 col-sm-1"></div>
-            <div class="col-md-5 col-sm-5">
-              <div class="row">
-                <div class="col-md-5 col-sm-5">
-                  <h5 class="padd">
-                    Phone#
-                  </h5>
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <mat-form-field class="example-full-width">
-                    <input matInput type="email">
-                  </mat-form-field>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5 col-sm-5">
-              <div class="row">
-                <div class="col-md-5 col-sm-5">
-                  <h5 class="padd">
-                    Department
-                  </h5>
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <mat-form-field class="example-full-width">
-                    <input matInput type="password">
-                  </mat-form-field>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-1 col-sm-1"></div>
-            <div class="col-md-5 col-sm-5">
-              <div class="row">
-                <div class="col-md-5 col-sm-5">
-                  <h5 class="padd">
-                    Location
-                  </h5>
-                </div>
-                <div class="col-md-7 col-sm-7">
-                    <mat-form-field class="pad-0 ">
-                        <mat-select>
-                          <mat-option *ngFor="let samplevalue of location" [value]="samplevalue.value">
-                            {{ samplevalue.viewValue }}
-                          </mat-option>
-                        </mat-select>
-                      </mat-form-field>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-5 col-sm-5">
-              <div class="row">
-                <div class="col-md-5 col-sm-5">
-                  <h5 class="padd">
-                    Mobile User
-                  </h5>
-                </div>
-                <div class="col-md-7 col-sm-7">
-                    <mat-form-field class="pad-0 ">
-                        <mat-select>
-                          <mat-option *ngFor="let samplevalue of mobileuser" [value]="samplevalue.value">
-                            {{ samplevalue.viewValue }}
-                          </mat-option>
-                        </mat-select>
-                      </mat-form-field>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-1 col-sm-1"></div>
-            <div class="col-md-5 col-sm-5">
-              <div class="row">
-                <div class="col-md-5 col-sm-5">
-                  <h5 class="padd">
-                    Role
-                  </h5>
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <mat-form-field class="example-full-width">
-                    <input matInput type="email">
-                  </mat-form-field>
-                </div>
-              </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="email">
+              </mat-form-field>
             </div>
           </div>
 
 
-          <div class="row">
-              <div class="col-md-5 col-sm-5">
-                <div class="row">
-                  <div class="col-md-5 col-sm-5">
-                    <h5 class="padd">
-                      Status
-                    </h5>
-                  </div>
-                  <div class="col-md-7 col-sm-7">
-                      <mat-form-field class="pad-0 ">
-                          <mat-select>
-                            <mat-option *ngFor="let samplevalue of mobileuser" [value]="samplevalue.value">
-                              {{ samplevalue.viewValue }}
-                            </mat-option>
-                          </mat-select>
-                        </mat-form-field>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-1 col-sm-1"></div>
-              <div class="col-md-5 col-sm-5">
-                
-              </div>
-            </div>
 
+          <div class="row col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <label class="padd">
+                E-Mail
+              </label>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="password">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row col-md-offset-1 col-sm-offset-1 col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <label class="padd">
+                Phone#
+              </label>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="email">
+              </mat-form-field>
+            </div>
+          </div>
+
+
+          <div class="row col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <label class="padd">
+                Department
+              </label>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="password">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row col-md-offset-1 col-sm-offset-1 col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <label class="padd">
+                Location
+              </label>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="pad-0 ">
+                <mat-select>
+                  <mat-option *ngFor="let samplevalue of location" [value]="samplevalue.value">
+                    {{ samplevalue.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+
+
+          <div class="row col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <label class="padd">
+                Mobile User
+              </label>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="pad-0 ">
+                <mat-select>
+                  <mat-option *ngFor="let samplevalue of mobileuser" [value]="samplevalue.value">
+                    {{ samplevalue.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row col-md-offset-1 col-sm-offset-1 col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <label class="padd">
+                Role
+              </label>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="email">
+              </mat-form-field>
+            </div>
+          </div>
+
+
+
+
+          <div class="row col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <label class="padd">
+                Status
+              </label>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="pad-0 ">
+                <mat-select>
+                  <mat-option *ngFor="let samplevalue of mobileuser" [value]="samplevalue.value">
+                    {{ samplevalue.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
         </div>
-       <div class="row col-sm-12 col-md-12 mr-t">
-            <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 text-center">
-              <button class="btn colorbtn1 btnpad" (click)="cancel()">Save</button>
-              <button class="btn cancel btnpad" (click)="cancel()"> Cancel</button>
-            </div>
-          </div>
 
+
+
+        <div class="row col-sm-12 col-md-12 mr-t">
+          <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 text-center">
+            <button class="btn colorbtn1 btnpad">Save</button>
+            <button class="btn cancel btnpad" (click)="cancel()"> Cancel</button>
+          </div>
+        </div>
       </div>
     </div>
-
-
   </div>
 </div>
