@@ -112,7 +112,7 @@ tr:nth-child(even){
 
 .bg-clr1 {
     background: #ffffff;
-    min-height: 74px;
+    padding-bottom: 55px;
     box-shadow: 0px 0px 10px -1px #ccc;
 }
 

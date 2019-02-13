@@ -21,6 +21,7 @@ import { HomeComponent } from './home/home.component';
 import { AuthGuardService } from './guards/auth-guard.service';
 import { ForgotPasswordComponent } from './authentication/forgot-password/forgot-password.component';
 import { AdminComponent } from './admin/admin.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { UserManagementComponent } from './admin/user-management/user-management.component';
 import { VenderMasterComponent } from './admin/vender-master/vender-master.component';
 import { DispatchMasterComponent } from './admin/dispatch-master/dispatch-master.component';
@@ -65,6 +66,7 @@ import { RepackingComponent } from './warehouse/repacking/repacking.component';
 import { ShippingComponent } from './warehouse/shipping/shipping.component';
 import { StructuresComponent } from './warehouse/structures/structures.component';
 import { TransportHistoryComponent } from './warehouse/transport-history/transport-history.component';
+import { MatNativeDateModule } from '@angular/material';
 
 
 @NgModule({
@@ -136,7 +138,9 @@ import { TransportHistoryComponent } from './warehouse/transport-history/transpo
     MatDialogModule,
     MatInputModule,
     MatCardModule,
-    ChartsModule
+    ChartsModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]

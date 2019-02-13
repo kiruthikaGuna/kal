@@ -16,7 +16,7 @@
             </div>
           </div>
           <div class="col-md-4 pad-top ">
-            <button class="btn colorbtn" (click)="add()"><i class="fa fa-plus"></i> Add</button>
+            <button class="btn colorbtn" (click)="OpenDial()"><i class="fa fa-plus"></i> Add</button>
           </div>
         </div>
       </div>
@@ -40,9 +40,8 @@
           </thead>
           <tbody class="alternate_color body-clr">
             <tr *ngFor="let tablevalue of table1value">
-              <a (click)="OpenDial()" class="point">
-                <td>{{tablevalue.VehicleNo}}</td>
-              </a>
+              <td>{{tablevalue.no}}</td>
+              <td><a class="point">{{tablevalue.VehicleNo}}</a></td>
               <td>{{tablevalue.DispatchCenter}}</td>
               <td>{{tablevalue.ShippedDate}}</td>
               <td>{{tablevalue.ArrivedDate}}</td>

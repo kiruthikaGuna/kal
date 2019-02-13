@@ -41,7 +41,7 @@
           </thead>
           <tbody class="alternate_color body-clr">
             <tr *ngFor="let tablevalue of table1value">
-              <a (click)="OpenDial()" class="point"><td>{{tablevalue.ConsignmentNo}}</td></a>
+              <td><a (click)="OpenDial()" class="point">{{tablevalue.ConsignmentNo}}</a></td>
               <td>{{tablevalue.From}}</td>
               <td>{{tablevalue.To}}</td>
               <td>{{tablevalue.ShippedDate}}</td>

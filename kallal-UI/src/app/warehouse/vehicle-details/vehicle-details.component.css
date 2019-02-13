@@ -1,0 +1,121 @@
+
+.input-group{
+    width: 130px;
+}
+
+.margLeft{
+    margin-left: 60px;
+}
+
+.marginTable{
+    margin-top: 14px;
+}
+/* Table style*/
+
+ .mb-0{
+           margin-bottom: 0px !important;
+ }
+
+
+.tablecolor{
+    background: white;
+   
+}
+
+.alignend{
+    text-align: center;
+}
+
+.bg{
+    background: #FBF0E8;
+}
+
+.mt-20{
+    margin-top: 20px;
+    }
+
+.rt{
+    text-align: right;
+}
+tr:nth-child(even){
+    background: #F5F6FA;
+    }
+
+    .pad-0{
+    padding: 0px;
+    }
+
+.alignend{
+    text-align: center;
+}
+
+table a
+{
+    display:block;
+    text-decoration:underline;
+}
+
+.point{
+    cursor: pointer;
+}
+
+
+
+
+.btnpad:hover{
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #ec8023;
+    color: #ffffff;
+   font-weight: 600;
+
+}
+
+.btnpad{
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #43425D;
+    color: #ffffff;
+   font-weight: 600;
+
+}
+
+
+.padd{
+    padding-left: 0px !important;
+    padding-right: 15px !important;
+    padding-top:15px !important;
+    padding-bottom: 15px !important;
+}
+
+.cancel{
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #43425D;
+    color: #ffffff;
+   font-weight: 600;
+
+}
+.colorbtn1{
+    margin-right: 40px;
+}
+.text-right{
+    text-align: right !important;
+}
+
+.mt-8{
+    margin-top: 8px;
+}
+
+.colorbtn{
+    background-color: #DF7426;
+    color: white;
+}
+
+.wd-10{
+    width: 10em !important;
+}
+.matdate{
+    height: 0px !important;
+    margin-top: -5px !important;
+}
