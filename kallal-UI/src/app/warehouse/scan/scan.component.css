@@ -99,3 +99,18 @@ table a
 .colorbtn1{
     margin-right: 40px;
 }
+
+.alignend{
+    text-align: center;
+}
+
+.disply{
+    white-space: nowrap
+}
+.m-rt{
+margin-right: 7px;
+}
+
+.cursr{
+    cursor: pointer;
+}

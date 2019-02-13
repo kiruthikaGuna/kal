@@ -13,12 +13,10 @@ export class ScanComponent implements OnInit {
 
   table1value = [
     {
-    no: 1, VehicleNo: 'TVS122545', DispatchCenter: 'Singapore', ShippedDate: '15 Feb 2019',
-    ArrivedDate: '25 Mar 2019', NoOfBags: '5'
+    no: 1, Bag: '', Barcode: '', Weight: '', ScanDateTime: ''
   },
   {
-    no: 2, VehicleNo: 'TVS12255', DispatchCenter: 'Singapore', ShippedDate: '15 Feb 2019',
-    ArrivedDate: '25 Mar 2019', NoOfBags: '5'
+    no: 2, Bag: 'Bag 3', Barcode: '6569865695965', Weight: '30.5 kg', ScanDateTime: '4 Nov 2018 12:54 PM'
   }
 ];
 

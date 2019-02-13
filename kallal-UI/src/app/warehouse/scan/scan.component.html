@@ -30,9 +30,9 @@
                 <th>#</th>
                 <th>Bag</th>
                 <th>Barcode</th>
-                <th>Loaded Weight</th>
-                <th>Arrived Weight</th>
-                <th>Weight Difference</th>
+                <th>Weight</th>
+                <th>Scan Date & Time</th>
+                <th></th>
               </tr>
             </thead>
             <tbody class="alternate_color body-clr">
@@ -40,9 +40,11 @@
                 <td>{{tablevalue.no}}</td>
                 <td>{{tablevalue.Bag}}</td>
                 <td>{{tablevalue.Barcode}}</td>
-                <td>{{tablevalue.LoadedWeight}}</td>
-                <td>{{tablevalue.ArrivedWeight}}</td>
-                <td>{{tablevalue.WeightDifference}}</td>
+                <td>{{tablevalue.Weight}}</td>
+                <td>{{tablevalue.ScanDateTime}}</td>
+                <td class="alignend disply cursr"> <img src="assets/img/edit.png" (click)="edit()"/>&nbsp;&nbsp;&nbsp;
+                  <img src="assets/img/delete.png" /></td>
+                
               </tr>
             </tbody>
           </table>
@@ -51,7 +53,7 @@
     </div>
     <div class="panel bg panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12 margn">
       <div class="col-lg-12 panel mt-20 bg">
-        <div class="col-lg-offset-8 col-lg-2 rt">Net Loaded Weight</div>
+        <div class="col-lg-offset-9 col-lg-2 rt">Net Loaded Weight</div>
         <div class="col-lg-1 rt">170 kg</div>
       </div>
       <div class="col-lg-12 panel bg">
