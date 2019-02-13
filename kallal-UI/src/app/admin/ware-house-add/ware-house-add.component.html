@@ -1,127 +1,105 @@
 <div id="page-content-wrapper" style="margin-top: -15px;">
-    <div class="container-fluid">
-      <h4>
-        Add User
-      </h4>
-  
-      <div class="panel panel-default  col-sm-12 col-md-12 ">
-        <div class="panel-body">
-          <div class="  col-sm-12 col-md-12 ">
-  
-            <div class="row">
-              <div class="col-md-5 col-sm-5">
-                <div class="row">
-                  <div class="col-md-5 col-sm-5">
-                    <h5 class="padd">
-                      Warehouse Code
-                    </h5>
-                  </div>
-                  <div class="col-md-7 col-sm-7">
-                    <mat-form-field class="example-full-width">
-                      <input matInput type="password">
-                    </mat-form-field>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-1 col-sm-1"></div>
-              <div class="col-md-5 col-sm-5">
-                <div class="row">
-                  <div class="col-md-5 col-sm-5">
-                    <h5 class="padd">
-                      Warehouse Name
-                    </h5>
-                  </div>
-                  <div class="col-md-7 col-sm-7">
-                    <mat-form-field class="example-full-width">
-                      <input matInput type="email">
-                    </mat-form-field>
-                  </div>
-                </div>
-              </div>
+  <div class="container-fluid">
+    <h4>
+      Add User
+    </h4>
+
+    <div class="panel panel-default  col-sm-12 col-md-12 ">
+      <div class="panel-body">
+        <div class="row col-sm-12 col-md-12 ">
+          <div class="row col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <h5 class="padd">
+                Warehouse Code
+              </h5>
             </div>
-  
-            <div class="row">
-              <div class="col-md-5 col-sm-5">
-                <div class="row">
-                  <div class="col-md-5 col-sm-5">
-                    <h5 class="padd">
-                      Address
-                    </h5>
-                  </div>
-                  <div class="col-md-7 col-sm-7">
-                    <mat-form-field class="example-full-width">
-                      <input matInput type="password">
-                    </mat-form-field>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-1 col-sm-1"></div>
-              <div class="col-md-5 col-sm-5">
-                <div class="row">
-                  <div class="col-md-5 col-sm-5">
-                    <h5 class="padd">
-                      Email
-                    </h5>
-                  </div>
-                  <div class="col-md-7 col-sm-7">
-                    <mat-form-field class="example-full-width">
-                      <input matInput type="email">
-                    </mat-form-field>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-5 col-sm-5">
-                <div class="row">
-                  <div class="col-md-5 col-sm-5">
-                    <h5 class="padd">
-                      Mobile#
-                    </h5>
-                  </div>
-                  <div class="col-md-7 col-sm-7">
-                    <mat-form-field class="example-full-width">
-                      <input matInput type="password">
-                    </mat-form-field>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-1 col-sm-1"></div>
-              <div class="col-md-5 col-sm-5">
-                <div class="row">
-                  <div class="col-md-5 col-sm-5">
-                    <h5 class="padd">
-                      No.ofStructure
-                    </h5>
-                  </div>
-                  <div class="col-md-7 col-sm-7">
-                    <mat-form-field class="pad-0 ">
-                      <mat-select>
-                        <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
-                          {{ samplevalue.viewValue }}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-  
-          </div>
-  
-  
-          <div class="row col-sm-12 col-md-12 mr-t">
-            <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 text-center">
-              <button class="btn colorbtn1 btnpad" (click)="cancel()">Save</button>
-              <button class="btn cancel btnpad" (click)="cancel()"> Cancel</button>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="password">
+              </mat-form-field>
             </div>
           </div>
-  
-  
+
+          <div class="row col-md-offset-1 col-sm-offset-1 col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <h5 class="padd">
+                Warehouse Name
+              </h5>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="email">
+              </mat-form-field>
+            </div>
+          </div>
+
+
+
+          <div class="row col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <h5 class="padd">
+                Address
+              </h5>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="password">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row col-md-offset-1 col-sm-offset-1 col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <h5 class="padd">
+                Email
+              </h5>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="email">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <h5 class="padd">
+                Mobile#
+              </h5>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="example-full-width">
+                <input matInput type="password">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row col-md-offset-1 col-sm-offset-1 col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
+              <h5 class="padd">
+                No.ofStructure
+              </h5>
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <mat-form-field class="pad-0 ">
+                <mat-select>
+                  <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
+                    {{ samplevalue.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row col-sm-12 col-md-12 mr-t">
+          <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 text-center">
+            <button class="btn colorbtn1 btnpad">Save</button>
+            <button class="btn cancel btnpad" (click)="cancel()"> Cancel</button>
+          </div>
         </div>
       </div>
-  
-  
     </div>
   </div>
+</div>
