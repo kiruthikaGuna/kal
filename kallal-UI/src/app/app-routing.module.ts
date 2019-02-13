@@ -99,7 +99,7 @@ const routes: Routes = [
       { path: 'Structures', component: StructuresComponent, data: { 'title': 'Structures' } },
       { path: 'TransportHistory', component: TransportHistoryComponent, data: { 'title': 'TransportHistory' } },
       { path: 'TransportList', component: TransportListComponent, data: { 'title': 'TransportList' } },
-      { path: 'VechicleDetails', component: VehicleDetailsComponent, data: { 'title': 'VechicleDetails' } },
+      { path: 'VehicleDetails', component: VehicleDetailsComponent, data: { 'title': 'VehicleDetails' } },
       { path: 'TransportDetails', component: TransportDetailsComponent, data: { 'title': 'TransportDetails' } },
    ]
    }

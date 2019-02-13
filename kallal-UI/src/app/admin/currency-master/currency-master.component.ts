@@ -9,21 +9,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./currency-master.component.css']
 })
 export class CurrencyMasterComponent implements OnInit {
-
-  constructor(public dialog: MatDialog, private router:Router) { }
-
-  ngOnInit() {
-  }
+  constructor(public dialog: MatDialog, private router: Router) { }
 
   table1value = [
     { no: '1', CurrencyCode: 'Cristiano', Currencydescription: 'Ronaldo' },
     { no: '2', CurrencyCode: 'Cristiano', Currencydescription: 'Ronaldo' }
-  ]
+  ];
 
   dropDwon = [
     { value: 'cristiano', viewValue: 'cristiano' },
-    { value: 'messi', viewValue: 'messi' },
+    { value: 'messi', viewValue: 'messi' }
   ];
+
+  ngOnInit() {
+  }
 
 
   edit() {

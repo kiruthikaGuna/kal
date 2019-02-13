@@ -12,18 +12,18 @@ export class BigMasterComponent implements OnInit {
 
   constructor(public dialog: MatDialog, private router: Router) { }
 
-  ngOnInit() {
-  }
-
   table1value = [
-    { no: '1', Bagsize:'#76767' , Bagname:'Ronaldo' , Bagweight:'3434343' },
-    { no: '2', Bagsize:'#76767' , Bagname:'Ronaldo' , Bagweight:'3434343'  },
-   ]
+    { no: '1', Bagsize: '#76767' , Bagname: 'Ronaldo' , Bagweight: '3434343' },
+    { no: '2', Bagsize: '#76767' , Bagname: 'Ronaldo' , Bagweight: '3434343'  },
+   ];
 
   dropDwon = [
     {value: 'cristiano', viewValue: 'cristiano'},
     {value: 'messi', viewValue: 'messi'},
   ];
+
+  ngOnInit() {
+  }
 
 
   edit() {
