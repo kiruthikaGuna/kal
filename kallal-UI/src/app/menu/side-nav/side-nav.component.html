@@ -101,6 +101,62 @@
                     </a>
                 </li>
 
+                <li>
+                    <a [routerLink]="['TransportList']" [ngClass]="(menu == 'TransportList')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('TransportList')">
+                        <img src="assets/img/Conversion_Master.png" />
+                        <span class="leftpad"> Transport List </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['VechicleDetails']" [ngClass]="(menu == 'VechicleDetails')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('VechicleDetails')">
+                        <img src="assets/img/Conversion_Master.png" />
+                        <span class="leftpad"> Vehicle Details </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Scan']" [ngClass]="(menu == 'Scan')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Scan')">
+                        <img src="assets/img/Conversion_Master.png" />
+                        <span class="leftpad"> Scan </span>
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a [routerLink]="['Repacking']" [ngClass]="(menu == 'Repacking')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Repacking')">
+                        <img src="assets/img/Conversion_Master.png" />
+                        <span class="leftpad"> Repacking </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Shipping']" [ngClass]="(menu == 'Shipping')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Shipping')">
+                        <img src="assets/img/Conversion_Master.png" />
+                        <span class="leftpad"> Shipping </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['Structures']" [ngClass]="(menu == 'Structures')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Structures')">
+                        <img src="assets/img/Conversion_Master.png" />
+                        <span class="leftpad"> Structures </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['TransportHistory']" [ngClass]="(menu == 'TransportHistory')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('TransportHistory')">
+                        <img src="assets/img/Conversion_Master.png" />
+                        <span class="leftpad"> Transport History </span>
+                    </a>
+                </li>
             </ul>
         </div>
 

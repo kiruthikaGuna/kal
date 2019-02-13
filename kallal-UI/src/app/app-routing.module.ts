@@ -38,6 +38,13 @@ import { EditQualityMasterComponent } from './admin/popup/edit-quality-master/ed
 import { EditStructureMasterComponent } from './admin/popup/edit-structure-master/edit-structure-master.component';
 import { EditVendorMasterComponent } from './admin/popup/edit-vendor-master/edit-vendor-master.component';
 import { EditWarehouseMasterComponent } from './admin/popup/edit-warehouse-master/edit-warehouse-master.component';
+import { RepackingComponent } from './warehouse/repacking/repacking.component';
+import { ScanComponent } from './warehouse/scan/scan.component';
+import { ShippingComponent } from './warehouse/shipping/shipping.component';
+import { StructuresComponent } from './warehouse/structures/structures.component';
+import { TransportHistoryComponent } from './warehouse/transport-history/transport-history.component';
+import { TransportListComponent } from './warehouse/transport-list/transport-list.component';
+import { VehicleDetailsComponent } from './warehouse/vehicle-details/vehicle-details.component';
 
 
 const routes: Routes = [
@@ -85,9 +92,15 @@ const routes: Routes = [
       { path: 'editstructureMaster', component: EditStructureMasterComponent, data: { 'title': 'editstructureMaster' } },
       { path: 'editvendorMaster', component: EditVendorMasterComponent, data: { 'title': 'editvendorMaster' } },
       { path: 'editwarehouseMaster', component: EditWarehouseMasterComponent, data: { 'title': 'editwarehouseMaster' } },
+      { path: 'Repacking', component: RepackingComponent, data: { 'title': 'Repacking' } },
+      { path: 'Scan', component: ScanComponent, data: { 'title': 'Scan' } },
+      { path: 'Shipping', component: ShippingComponent, data: { 'title': 'Shipping' } },
+      { path: 'Structures', component: StructuresComponent, data: { 'title': 'Structures' } },
+      { path: 'TransportHistory', component: TransportHistoryComponent, data: { 'title': 'TransportHistory' } },
+      { path: 'TransportList', component: TransportListComponent, data: { 'title': 'TransportList' } },
+      { path: 'VechicleDetails', component: VehicleDetailsComponent, data: { 'title': 'VechicleDetails' } },
     ]
-    //CurrencyMasterComponent EditBagMasterComponent
-  }
+   }
 ];
 
 @NgModule({
