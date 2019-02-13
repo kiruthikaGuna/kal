@@ -1,0 +1,53 @@
+
+.input-group{
+    width: 130px;
+}
+
+.margLeft{
+    margin-left: 60px;
+}
+
+.marginTable{
+    margin-top: 14px;
+}
+/* Table style*/
+.padd{
+    padding-left: 0px !important;
+    padding-right: 15px !important;
+    padding-top:15px !important;
+    padding-bottom: 15px !important;
+}
+ 
+
+.tablecolor{
+    background: white;
+   
+}
+
+
+tr:nth-child(even){
+    background: #F5F6FA;
+    }
+
+    .pad-0{
+    padding: 0px;
+    }
+
+.alignend{
+    text-align: center;
+}
+
+table a
+{
+    display:block;
+    text-decoration:underline;
+}
+
+.colorbtn{
+    background-color: #DF7426;
+    color: white;
+}
+
+.point{
+    cursor: pointer;
+}

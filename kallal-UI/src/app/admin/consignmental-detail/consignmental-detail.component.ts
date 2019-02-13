@@ -9,25 +9,25 @@ import { ConsignmentWeightComponent } from '../consignment-weight/consignment-we
   styleUrls: ['./consignmental-detail.component.css']
 })
 export class ConsignmentalDetailComponent implements OnInit {
-  
-  constructor(public dialog: MatDialog,private router: Router) { }
+
+  constructor(public dialog: MatDialog, private router: Router) { }
+  table1value = [
+    {
+      ConsignmentNo: 'TVS122545', From: 'Singapore', To: 'Salem', ShippedDate: '15 Feb 2019',
+      ArrivedDate: '25 Mar 2019', NoOfBags: '5', LoadedWeight: '34', ArrivedWeight: '40',
+      WeightDifference: '6', Status: 'In Transit'
+    },
+    {
+      ConsignmentNo: 'TVS765589', From: 'Singapore', To: 'Salem', ShippedDate: '15 Feb 2019',
+      ArrivedDate: '25 Mar 2019', NoOfBags: '5', LoadedWeight: '34', ArrivedWeight: '40',
+      WeightDifference: '6', Status: 'SriLanka'
+    }
+  ];
 
   ngOnInit() {
   }
-  table1value=[
-    {
-    ConsignmentNo:'TVS122545', From: 'Singapore', To: 'Salem', ShippedDate: '15 Feb 2019',
-    ArrivedDate: '25 Mar 2019', NoOfBags:'5', LoadedWeight:'34', ArrivedWeight: '40',
-    WeightDifference:'6', Status: 'In Transit'
-  },
-  {
-    ConsignmentNo:'TVS765589', From: 'Singapore', To: 'Salem', ShippedDate: '15 Feb 2019',
-    ArrivedDate: '25 Mar 2019', NoOfBags:'5', LoadedWeight:'34', ArrivedWeight: '40',
-    WeightDifference:'6', Status: 'SriLanka'
-  }
-]
 
-OpenDial(){
-  this.router.navigate(['home/consignmentWeight']);
-}
+  OpenDial() {
+    this.router.navigate(['home/consignmentWeight']);
+  }
 }
