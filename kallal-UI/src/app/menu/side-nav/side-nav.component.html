@@ -111,8 +111,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='warehouse'">
-                    <a [routerLink]="['VechicleDetails']" [ngClass]="(menu == 'VechicleDetails')?'active-selected':'deactive-selected'"
-                        (click)="brumbCrumb('VechicleDetails')">
+                    <a [routerLink]="['VehicleDetails']" [ngClass]="(menu == 'VehicleDetails')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('VehicleDetails')">
                         <img src="assets/img/Conversion_Master.png" />
                         <span class="leftpad"> Vehicle Details </span>
                     </a>
