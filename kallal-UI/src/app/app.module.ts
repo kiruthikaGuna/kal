@@ -57,6 +57,14 @@ import { EditDispatchMasterComponent } from './admin/popup/edit-dispatch-master/
 import { EditCurrencyMasterComponent } from './admin/popup/edit-currency-master/edit-currency-master.component';
 import { CurrencyMasterAddComponent } from './admin/currency-master-add/currency-master-add.component';
 import { jqxChartComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxchart';
+import { WarehouseComponent } from './warehouse/warehouse.component';
+import { TransportListComponent } from './warehouse/transport-list/transport-list.component';
+import { VehicleDetailsComponent } from './warehouse/vehicle-details/vehicle-details.component';
+import { ScanComponent } from './warehouse/scan/scan.component';
+import { RepackingComponent } from './warehouse/repacking/repacking.component';
+import { ShippingComponent } from './warehouse/shipping/shipping.component';
+import { StructuresComponent } from './warehouse/structures/structures.component';
+import { TransportHistoryComponent } from './warehouse/transport-history/transport-history.component';
 
 
 @NgModule({
@@ -106,6 +114,14 @@ import { jqxChartComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxcha
     CurrencyMasterAddComponent,
     jqxBarGaugeComponent,
     jqxChartComponent,
+    WarehouseComponent,
+    TransportListComponent,
+    VehicleDetailsComponent,
+    ScanComponent,
+    RepackingComponent,
+    ShippingComponent,
+    StructuresComponent,
+    TransportHistoryComponent,
     ],
   imports: [
     BrowserModule,

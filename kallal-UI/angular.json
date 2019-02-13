@@ -23,10 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/jqwidgets-scripts/jqwidgets/styles/jqx.base.css",
-              "../node_modules/chart.js/dist/Chart.min.js"
-            ],
+              "src/styles.css"
+             ],
             "scripts": []
           },
           "configurations": {
@@ -81,9 +79,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css",
-              "node_modules/jqwidgets-scripts/jqwidgets/styles/jqx.base.css",
-              "../node_modules/chart.js/dist/Chart.min.js"
+              "src/styles.css"
             ],
             "scripts": [],
             "assets": [
