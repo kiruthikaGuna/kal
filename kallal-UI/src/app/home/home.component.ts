@@ -12,37 +12,61 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  dashboard () {
+  dashboard() {
     this.menu = 'dashboard';
   }
-  user_management () {
+  user_management() {
     this.menu = 'user management';
   }
-  vendor_master () {
+  vendor_master() {
     this.menu = 'vendor master';
   }
-  dispatch_master () {
+  dispatch_master() {
     this.menu = 'dispatch master';
   }
-  device_Allocation () {
+  device_Allocation() {
     this.menu = 'warehouse master';
   }
-  manage_devices () {
+  manage_devices() {
     this.menu = 'structure master';
   }
-  manage_rooms () {
+  manage_rooms() {
     this.menu = 'product master';
   }
-  roles () {
+  roles() {
     this.menu = 'quality master';
   }
-  users () {
+  users() {
     this.menu = 'bag master';
   }
-  current_recording () {
+  current_recording() {
     this.menu = 'currency master';
   }
-  role_activity_mapping () {
+  role_activity_mapping() {
     this.menu = 'approval';
   }
- }
+  TransportList() {
+    this.menu = 'TransportList';
+  }
+  VehicleDetails() {
+    this.menu = 'VehicleDetails';
+  }
+  Scan() {
+    this.menu = 'Scan';
+  }
+  Repacking() {
+    this.menu = 'Repacking';
+  }
+  Shipping() {
+    this.menu = 'Shipping';
+  }
+  Structures() {
+    this.menu = 'Structures';
+  }
+  TransportHistory() {
+    this.menu = 'TransportHistory';
+  }
+  Invoice() {
+    this.menu = 'Invoice';
+  }
+}

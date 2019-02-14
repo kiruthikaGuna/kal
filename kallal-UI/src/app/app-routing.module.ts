@@ -46,6 +46,8 @@ import { TransportHistoryComponent } from './warehouse/transport-history/transpo
 import { TransportListComponent } from './warehouse/transport-list/transport-list.component';
 import { VehicleDetailsComponent } from './warehouse/vehicle-details/vehicle-details.component';
 import { TransportDetailsComponent } from './warehouse/transport-details/transport-details.component';
+import { InvoiceComponent } from './warehouse/invoice/invoice.component';
+import { StorebagComponent } from './warehouse/popup/storebag/storebag.component';
 
 
 const routes: Routes = [
@@ -101,6 +103,8 @@ const routes: Routes = [
       { path: 'TransportList', component: TransportListComponent, data: { 'title': 'TransportList' } },
       { path: 'VehicleDetails', component: VehicleDetailsComponent, data: { 'title': 'VehicleDetails' } },
       { path: 'TransportDetails', component: TransportDetailsComponent, data: { 'title': 'TransportDetails' } },
+      { path: 'Invoice', component: InvoiceComponent, data: { 'title': 'Invoice' } },
+      { path: 'Strorebag', component: StorebagComponent, data: { 'title': 'Strorebag' } },
    ]
    }
 ];

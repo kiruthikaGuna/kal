@@ -68,6 +68,8 @@ import { StructuresComponent } from './warehouse/structures/structures.component
 import { TransportHistoryComponent } from './warehouse/transport-history/transport-history.component';
 import { TransportDetailsComponent } from './warehouse/transport-details/transport-details.component';
 import { MatNativeDateModule } from '@angular/material';
+import { InvoiceComponent } from './warehouse/invoice/invoice.component';
+import { StorebagComponent } from './warehouse/popup/storebag/storebag.component';
 
 
 @NgModule({
@@ -126,6 +128,8 @@ import { MatNativeDateModule } from '@angular/material';
     StructuresComponent,
     TransportHistoryComponent,
     TransportDetailsComponent,
+    InvoiceComponent,
+    StorebagComponent,
     ],
   imports: [
     BrowserModule,
