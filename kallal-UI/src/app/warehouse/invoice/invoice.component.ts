@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-invoice',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvoiceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+  table1value = [
+    {
+     no: 1 , consignmentNo: '1212' , view: 'view'
+    },
+    {
+      no: 2 , consignmentNo: '9989' , view: 'view'
+    }
+  ];
 
   ngOnInit() {
+  }
+
+  OpenDial() {
+    this.router.navigate(['home/TransportDetails']);
   }
 
 }

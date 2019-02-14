@@ -11,12 +11,12 @@ export class TransportHistoryComponent implements OnInit {
   constructor( private router: Router) { }
   table1value = [
     {
-      VehicleNo: 'TVS122545', BatchNo: 'Singapore', Dispatch: 'Salem', WareHouse: '15 Feb 2019',
+      VehicleNo: '34343', BatchNo: 'Singapore', Dispatch: 'Salem', WareHouse: '15 Feb 2019',
       ShippedDate: '25 Mar 2019', ArrivedDate: '5', Noofbags: '34', Weight: '40',
       Status: 'In Transit'
     },
     {
-      VehicleNo: 'TVS122545', BatchNo: 'Singapore', Dispatch: 'Salem', WareHouse: '15 Feb 2019',
+      VehicleNo: '22211', BatchNo: 'Singapore', Dispatch: 'Salem', WareHouse: '15 Feb 2019',
       ShippedDate: '25 Mar 2019', ArrivedDate: '5', Noofbags: '34', Weight: '40',
       Status: 'In Transit'
     }
