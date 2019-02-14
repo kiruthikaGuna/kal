@@ -114,20 +114,27 @@
                 </li>
 
                 <!-- Warehouse menu's start -->
+
                 <li *ngIf="this.login_user.role=='warehouse'">
                     <a [routerLink]="['TransportList']"
                         [ngClass]="(menu == 'TransportList')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('TransportList')">
-                        <img src="assets/img/Conversion_Master.png" />
+                        <img src="assets/img/Transport_List.png" />
                         <span class="leftpad"> Transport List </span>
                     </a>
                 </li>
 
                 <li *ngIf="this.login_user.role=='warehouse'">
+<<<<<<< HEAD
                     <a [routerLink]="['VechicleDetails']"
                         [ngClass]="(menu == 'VechicleDetails')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('VechicleDetails')">
                         <img src="assets/img/Conversion_Master.png" />
+=======
+                    <a [routerLink]="['VehicleDetails']" [ngClass]="(menu == 'VehicleDetails')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('VehicleDetails')">
+                        <img src="assets/img/Vehicle_Details.png" />
+>>>>>>> bbc30f7e2c026029ed93dc16003339cabf97ed63
                         <span class="leftpad"> Vehicle Details </span>
                     </a>
                 </li>
@@ -135,7 +142,7 @@
                 <li *ngIf="this.login_user.role=='warehouse'">
                     <a [routerLink]="['Scan']" [ngClass]="(menu == 'Scan')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Scan')">
-                        <img src="assets/img/Conversion_Master.png" />
+                        <img src="assets/img/Scan.png" />
                         <span class="leftpad"> Scan </span>
                     </a>
                 </li>
@@ -145,7 +152,7 @@
                     <a [routerLink]="['Repacking']"
                         [ngClass]="(menu == 'Repacking')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Repacking')">
-                        <img src="assets/img/Conversion_Master.png" />
+                        <img src="assets/img/Repacking.png" />
                         <span class="leftpad"> Repacking </span>
                     </a>
                 </li>
@@ -154,7 +161,7 @@
                     <a [routerLink]="['Shipping']"
                         [ngClass]="(menu == 'Shipping')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Shipping')">
-                        <img src="assets/img/Conversion_Master.png" />
+                        <img src="assets/img/Shipping.png" />
                         <span class="leftpad"> Shipping </span>
                     </a>
                 </li>
@@ -163,7 +170,7 @@
                     <a [routerLink]="['Structures']"
                         [ngClass]="(menu == 'Structures')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Structures')">
-                        <img src="assets/img/Conversion_Master.png" />
+                        <img src="assets/img/Structures.png" />
                         <span class="leftpad"> Structures </span>
                     </a>
                 </li>
@@ -172,8 +179,17 @@
                     <a [routerLink]="['TransportHistory']"
                         [ngClass]="(menu == 'TransportHistory')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('TransportHistory')">
-                        <img src="assets/img/Conversion_Master.png" />
+                        <img src="assets/img/Transport_History.png" />
                         <span class="leftpad"> Transport History </span>
+                    </a>
+                </li>
+
+                
+                <li *ngIf="this.login_user.role=='warehouse'">
+                    <a [routerLink]="['Invoice']" [ngClass]="(menu == 'Invoice')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('Invoice')">
+                        <img src="assets/img/Invoice.png" />
+                        <span class="leftpad"> Invoice </span>
                     </a>
                 </li>
                 <!-- End of Warehouse menu's -->

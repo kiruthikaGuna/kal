@@ -5,9 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { jqxBarGaugeComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxbargauge';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import {ReactiveFormsModule} from '@angular/forms';
+import { MatTabsModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -68,10 +68,16 @@ import { StructuresComponent } from './warehouse/structures/structures.component
 import { TransportHistoryComponent } from './warehouse/transport-history/transport-history.component';
 import { TransportDetailsComponent } from './warehouse/transport-details/transport-details.component';
 import { MatNativeDateModule } from '@angular/material';
+<<<<<<< HEAD
 import {MatIconModule} from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatMenuModule} from '@angular/material/menu';
 import { ConsignmentSearchComponent } from './admin/popup/consignment-search/consignment-search.component';
+=======
+import { InvoiceComponent } from './warehouse/invoice/invoice.component';
+import { StorebagComponent } from './warehouse/popup/storebag/storebag.component';
+
+>>>>>>> bbc30f7e2c026029ed93dc16003339cabf97ed63
 
 @NgModule({
   declarations: [
@@ -129,7 +135,12 @@ import { ConsignmentSearchComponent } from './admin/popup/consignment-search/con
     StructuresComponent,
     TransportHistoryComponent,
     TransportDetailsComponent,
+<<<<<<< HEAD
     ConsignmentSearchComponent,
+=======
+    InvoiceComponent,
+    StorebagComponent,
+>>>>>>> bbc30f7e2c026029ed93dc16003339cabf97ed63
     ],
   imports: [
     BrowserModule,
@@ -147,11 +158,15 @@ import { ConsignmentSearchComponent } from './admin/popup/consignment-search/con
     ChartsModule,
     MatDatepickerModule,
     MatNativeDateModule,
+<<<<<<< HEAD
     MatIconModule,
     MatCheckboxModule,
     MatDatepickerModule,
     MatMenuModule,
     MatNativeDateModule
+=======
+    MatTabsModule
+>>>>>>> bbc30f7e2c026029ed93dc16003339cabf97ed63
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]
