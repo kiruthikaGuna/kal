@@ -125,16 +125,10 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='warehouse'">
-<<<<<<< HEAD
                     <a [routerLink]="['VechicleDetails']"
                         [ngClass]="(menu == 'VechicleDetails')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('VechicleDetails')">
                         <img src="assets/img/Conversion_Master.png" />
-=======
-                    <a [routerLink]="['VehicleDetails']" [ngClass]="(menu == 'VehicleDetails')?'active-selected':'deactive-selected'"
-                        (click)="brumbCrumb('VehicleDetails')">
-                        <img src="assets/img/Vehicle_Details.png" />
->>>>>>> bbc30f7e2c026029ed93dc16003339cabf97ed63
                         <span class="leftpad"> Vehicle Details </span>
                     </a>
                 </li>

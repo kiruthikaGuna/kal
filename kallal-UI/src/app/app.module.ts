@@ -68,16 +68,13 @@ import { StructuresComponent } from './warehouse/structures/structures.component
 import { TransportHistoryComponent } from './warehouse/transport-history/transport-history.component';
 import { TransportDetailsComponent } from './warehouse/transport-details/transport-details.component';
 import { MatNativeDateModule } from '@angular/material';
-<<<<<<< HEAD
 import {MatIconModule} from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatMenuModule} from '@angular/material/menu';
 import { ConsignmentSearchComponent } from './admin/popup/consignment-search/consignment-search.component';
-=======
 import { InvoiceComponent } from './warehouse/invoice/invoice.component';
 import { StorebagComponent } from './warehouse/popup/storebag/storebag.component';
 
->>>>>>> bbc30f7e2c026029ed93dc16003339cabf97ed63
 
 @NgModule({
   declarations: [
@@ -135,12 +132,9 @@ import { StorebagComponent } from './warehouse/popup/storebag/storebag.component
     StructuresComponent,
     TransportHistoryComponent,
     TransportDetailsComponent,
-<<<<<<< HEAD
     ConsignmentSearchComponent,
-=======
     InvoiceComponent,
     StorebagComponent,
->>>>>>> bbc30f7e2c026029ed93dc16003339cabf97ed63
     ],
   imports: [
     BrowserModule,
@@ -158,15 +152,12 @@ import { StorebagComponent } from './warehouse/popup/storebag/storebag.component
     ChartsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-<<<<<<< HEAD
     MatIconModule,
     MatCheckboxModule,
     MatDatepickerModule,
     MatMenuModule,
-    MatNativeDateModule
-=======
+    MatNativeDateModule,
     MatTabsModule
->>>>>>> bbc30f7e2c026029ed93dc16003339cabf97ed63
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]
