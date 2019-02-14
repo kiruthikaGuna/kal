@@ -1,81 +1,73 @@
 <div class="">
-    <div class="container col-md-12 col-sm-12">
-      <div class="row">
-        <div class="col-md-3 col-sm-3">
-         
-        </div>
-  
-        <div class="col-md-9 col-sm-9 ">
-          <div class="floatRight">
-            <div class=" pad-top margLeft col-md-5">
-              <div class="input-group ">
-                <div class="input-group-btn">
-                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                </div>
-                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="container col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+          <mat-form-field>
+              <mat-select placeholder="Enter Structure">
+                <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
+                  {{samplevalue.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>        
+      </div>
+      <div class="col-md-9 col-sm-9 mt-5">
+          <button class="btn btnpad padd-8" (click)="StartScan()">Start Scan</button>&nbsp;
+          <button class="btn btnpad padd-8" (click)="StopScan()">Stop Scan</button>
       </div>
     </div>
-  
-  
-    <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r  mb-0">
-      <div class="panel-body padd">
-        <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
-          <table class="table">
-            <thead class="header-clr" style="background-color: #f0f0f7;">
-              <tr class=" ">
-                <th>#</th>
-                <th>Bag</th>
-                <th>Barcode</th>
-                <th>Weight</th>
-                <th>Scan Date & Time</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody class="alternate_color body-clr">
-              <tr *ngFor="let tablevalue of table1value">
-                <td>{{tablevalue.no}}</td>
-                <td>{{tablevalue.Bag}}</td>
-                <td>{{tablevalue.Barcode}}</td>
-                <td>{{tablevalue.Weight}}</td>
-                <td>{{tablevalue.ScanDateTime}}</td>
-                <td class="alignend disply cursr"> <img src="assets/img/edit.png" (click)="edit()"/>&nbsp;&nbsp;&nbsp;
-                  <img src="assets/img/delete.png" /></td>
-                
-              </tr>
-            </tbody>
-          </table>
-        </div>
+  </div>
+
+
+  <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r  mb-0">
+    <div class="panel-body padd">
+      <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
+        <table class="table">
+          <thead class="header-clr" style="background-color: #f0f0f7;">
+            <tr class=" ">
+              <th>#</th>
+              <th>Bag</th>
+              <th>Bag ID</th>
+              <th>Weight</th>
+              <th>Scan Date & Time</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="alternate_color body-clr">
+            <tr *ngFor="let tablevalue of table1value">
+              <td>{{tablevalue.no}}</td>
+              <td>{{tablevalue.Bag}}</td>
+              <td>{{tablevalue.BagID}}</td>
+              <td>{{tablevalue.Weight}}</td>
+              <td>{{tablevalue.ScanDateTime}}</td>
+              <td class="alignend disply cursr">
+                <img src="assets/img/delete.png" /></td>
+
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <div class="panel bg panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12 margn">
-      <div class="col-lg-12 panel mt-20 bg">
-        <div class="col-lg-offset-9 col-lg-2 rt">Net Loaded Weight</div>
-        <div class="col-lg-1 rt">170 kg</div>
-      </div>
-      <div class="col-lg-12 panel bg">
-        <div class="col-lg-offset-9 col-lg-2 rt">Net Arrived Weight</div>
-        <div class="col-lg-1 rt">165 kg</div>
-      </div>
-      <div class="col-lg-12 panel bg">
+    <div class="panel bg panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12 margn bld">
+        <div class="col-lg-12 panel mt-20 bg">
+          <div class="col-lg-offset-9 col-lg-2 rt">Net Weight</div>
+          <div class="col-lg-1 rt">70 kg</div>
+        </div>
+            <div class="col-lg-12 panel bg">
           <div class="col-lg-offset-9 col-lg-2 rt">Total Bag Weight</div>
-          <div class="col-lg-1 rt">2 kg</div>
+          <div class="col-lg-1 rt">1.5 kg</div>
         </div>
         <div class="col-lg-12 panel bg">
-            <div class="col-lg-offset-9 col-lg-2 rt">Gross Weight</div>
-            <div class="col-lg-1 rt">167 kg</div>
-          </div>
+          <div class="col-lg-offset-9 col-lg-2 rt">Gross Weight</div>
+          <div class="col-lg-1 rt">71.5 kg</div>
         </div>
-    <div class="row col-sm-12 col-md-12 mr-t">
-  
-      <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 text-center">
-        <button class="btn colorbtn1 btnpad" (click)="cancel()">Done</button>
-  
-        <button class="btn cancel btnpad" (click)="cancel()">Cancel</button>
       </div>
-    </div>
-  
+      <div class="row col-sm-12 col-md-12">
+        <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2 text-center mb-10">
+          <button class="btn btnpad padd-8" (click)="OpenDial()">Repack</button>&nbsp;
+          <button class="btn btnpad padd-8" (click)="cancel()">Store Bags</button>&nbsp;
+          <button class="btn btnpad padd-8" (click)="cancel()">Scan Completed</button>
+        </div>
+      </div>
   </div>
+  
+</div>

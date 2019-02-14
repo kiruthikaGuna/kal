@@ -11,18 +11,18 @@ import { Router } from '@angular/router';
 export class ProductMasterComponent implements OnInit {
 
   constructor(public dialog: MatDialog, private router: Router) { }
-
-  ngOnInit() {
-  }
   table1value = [
-    { no: '1', ProductCode:'#76767' , ProductName:'Ronaldo'  },
-    { no: '2', ProductCode:'#76767' , ProductName:'cr'  },
-   ]
+    { no: '1', ProductCode: '#76767' , ProductName: 'Ronaldo'  },
+    { no: '2', ProductCode: '#76767' , ProductName: 'cr'  },
+   ];
 
   dropDwon = [
     {value: 'cristiano', viewValue: 'cristiano'},
     {value: 'messi', viewValue: 'messi'},
   ];
+
+  ngOnInit() {
+  }
 
 
   edit() {

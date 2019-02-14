@@ -46,3 +46,13 @@ table a
 .point{
     cursor: pointer;
    }
+
+   .colorbtn{
+    background-color: #DF7426;
+    color: white;
+    padding: 5px 4px 5px 4px;
+}
+
+.wid-74{
+width: 74px;
+}

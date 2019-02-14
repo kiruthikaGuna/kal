@@ -1,3 +1,64 @@
-<p>
-  structures works!
-</p>
+<div class="container-fluid">
+
+    <h4>Structures</h4>
+  
+  
+  
+    <div class="row">
+      <div class="col-md-2 col-sm-12">
+        <div class="bg-clr">
+          <table class="table">
+  
+            <tr>
+              <th> structure1<i class="material-icons">
+                  keyboard_arrow_right
+                  </i>
+              </th>
+            </tr>
+            <tr>
+              <th> structure2<i class="material-icons">
+                  keyboard_arrow_right
+                  </i></th>
+            </tr>
+            <tr>
+              <th> structure3<i class="material-icons">
+                  keyboard_arrow_right
+                  </i></th>
+            </tr>
+            <tr>
+              <th> structure4<i class="material-icons">
+                  keyboard_arrow_right
+                  </i></th>
+            </tr>
+  
+          </table>
+  
+        </div>
+      </div>
+      <div class="col-md-10  col-sm-12 ">
+        <div class="bg-clr1 table-responsive vertical scroll">
+  
+            <table class="table">
+                <thead class="header-clr" style="background-color: #f0f0f7;">
+                  <tr>
+                    <th class="wid-44"><mat-checkbox></mat-checkbox></th>
+                    <th class="wid-260">Bag</th>
+                    <th class="wid-250">Product</th>
+                    <th class="alignend wid-25">Bag ID</th>
+                  </tr>
+                </thead>
+                <tbody class="alternate_color body-clr">
+                  <tr *ngFor="let tablevalue of table1value">
+                    <td><mat-checkbox></mat-checkbox></td>
+                    <td>{{tablevalue.Product}}</td>
+                    <td>{{tablevalue.NoofBags}}</td>
+                    <td>{{tablevalue.Totalweight}}</td>
+                    <td><button class="btn colorbtn">Update Vehicle</button></td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
+  </div>

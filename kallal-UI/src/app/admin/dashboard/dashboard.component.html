@@ -1,146 +1,146 @@
 <div id="page-content-wrapper" style="margin-top: -30px;">
-  <div class="container-fluid col-md-12 col-sm-12">
-    <!-- header title -->
-    <div class="row">
-      <div class="col-md-3 col-sm-3">
-        <h4>Dashboard</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div>
-        <div class="col-md-8">
-
-          <div class="row cont3">
-            <div class="col-md-5 col-xs-5 pad">
-
-              <h6 class="fcolor">Good to be shipped</h6>
-              <div>
-                <p class="value">40</p>
-                <p class="perc1">13.8%</p>
-                <img src="./assets/img/ch1.png" class="right">
-              </div>
-
-
-            </div>
-
-            <div class="col-md-5  col-xs-5 pad mr-l">
-
-              <h6 class="fcolor">Shipments</h6>
-              <div>
-                <p class="value">150</p>
-                <p class="perc2">13.8%</p>
-                <img src="./assets/img/ch2.png" class="right">
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4">
-
-
+    <div class="container-fluid col-md-12 col-sm-12">
+      <!-- header title -->
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <h4>Dashboard</h4>
         </div>
       </div>
-    </div>
-
-
-
-
-    <div class=" panel panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="panel-body">
-        <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <mat-form-field class="dropdown">
-            <mat-select placeholder="Srilanka">
-              <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
-                {{ samplevalue.viewValue }}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-
-        </div>
-        <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll">
-          <table class="table">
-            <thead class="header-clr" style="background-color: #f0f0f7;">
-              <tr>
-                <th class="wid-15">#</th>
-                <th class="wid-30">Product</th>
-                <th class="wid-32">No of Bags</th>
-                <th class="alignend wid-25">Total weight</th>
-              </tr>
-            </thead>
-            <tbody class="alternate_color body-clr">
-              <tr *ngFor="let tablevalue of table1value">
-                <td>{{tablevalue.no}}</td>
-                <td>{{tablevalue.Product}}</td>
-                <td>{{tablevalue.NoofBags}}</td>
-                <td>{{tablevalue.Totalweight}}</td>
-              </tr>
-              <tr>
-                <td>{{table1value.no}}</td>
-                <td>{{table1value.Product}}</td>
-                <td>{{table1value.No_of_Bags}}</td>
-                <td>{{table1value.Total_weight}}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="font">
-        <div class="col-md-6 col-sm-12">
-          <div class="bg-clr">
+  
+      <div class="row">
+        <div>
+          <div class="col-md-8">
+  
             <div class="row cont3">
-              <div class="col-md-5 col-lg-5 col-xs-5">
-                <p class="shifont">Shipments</p>
+              <div class="col-md-5 col-xs-5 pad">
+  
+                <h6 class="fcolor">Good to be shipped</h6>
+                <div>
+                  <p class="value">40</p>
+                  <p class="perc1">13.8%</p>
+                  <img src="./assets/img/ch1.png" class="right">
+                </div>
+  
+  
               </div>
-              <div class="col-md-4 col-lg-4 col-xs-4">
-                <div> In TransitIn</div>
-                <div>Processed Shipments</div>
-              </div>
-              <div class="col-md-3 col-lg-3 col-xs-3">
-                <mat-form-field class="dropdown">
-                  <mat-select placeholder="Srilanka">
-                    <mat-option *ngFor="let color of colors" [value]="color">
-                      {{color}}
-                    </mat-option>
-                  </mat-select>
-                </mat-form-field>
+  
+              <div class="col-md-5  col-xs-5 pad mr-l">
+  
+                <h6 class="fcolor">Shipments</h6>
+                <div>
+                  <p class="value">150</p>
+                  <p class="perc2">13.8%</p>
+                  <img src="./assets/img/ch2.png" class="right">
+                </div>
+  
               </div>
             </div>
-            <div>
-              <jqxChart #myChart [width]="500" [height]="300" [seriesGroups]="seriesGroups" [title]="''"
-                [description]="''" [showLegend]="true" [enableAnimations]="true" [padding]="padding"
-                [titlePadding]="titlePadding" [source]="sampleData" [xAxis]="xAxis" [valueAxis]="valueAxis"
-                [colorScheme]="'scheme06'">
-              </jqxChart>
-            </div>
+  
           </div>
-
+          <div class="col-md-4">
+  
+  
+          </div>
         </div>
-        <div class="col-md-6  col-sm-12">
-          <div class="bg-clr1">
-            <div class="row cont3">
-              <div class="col-md-5 col-lg-5 col-xs-4">
-                <p class="shifont">Delivery by Destination</p>
+      </div>
+  
+  
+  
+  
+      <div class=" panel panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="panel-body">
+          <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <mat-form-field class="dropdown">
+              <mat-select placeholder="Srilanka">
+                <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
+                  {{ samplevalue.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+          </div>
+          <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll">
+            <table class="table">
+              <thead class="header-clr" style="background-color: #f0f0f7;">
+                <tr>
+                  <th class="wid-15">#</th>
+                  <th class="wid-30">Product</th>
+                  <th class="wid-32">No of Bags</th>
+                  <th class="alignend wid-25">Total weight</th>
+                </tr>
+              </thead>
+              <tbody class="alternate_color body-clr">
+                <tr *ngFor="let tablevalue of table1value">
+                  <td>{{tablevalue.no}}</td>
+                  <td>{{tablevalue.Product}}</td>
+                  <td>{{tablevalue.NoofBags}}</td>
+                  <td>{{tablevalue.Totalweight}}</td>
+                </tr>
+                <tr>
+                  <td>{{table1value.no}}</td>
+                  <td>{{table1value.Product}}</td>
+                  <td>{{table1value.No_of_Bags}}</td>
+                  <td>{{table1value.Total_weight}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+        </div>
+      </div>
+  
+  
+      <div class="row">
+        <div class="font">
+          <div class="col-md-6 col-sm-12">
+            <div class="bg-clr">
+              <div class="row cont3">
+                <div class="col-md-5 col-lg-5 col-xs-5">
+                  <p class="shifont">Shipments</p>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xs-4">
+                  <div> In TransitIn</div>
+                  <div>Processed Shipments</div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xs-3">
+                  <mat-form-field class="dropdown">
+                    <mat-select placeholder="Srilanka">
+                      <mat-option *ngFor="let color of colors" [value]="color">
+                        {{color}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div>
+                <jqxChart #myChart [width]="500" [height]="300" [seriesGroups]="seriesGroups" [title]="''"
+                  [description]="''" [showLegend]="true" [enableAnimations]="true" [padding]="padding"
+                  [titlePadding]="titlePadding" [source]="sampleData" [xAxis]="xAxis" [valueAxis]="valueAxis"
+                  [colorScheme]="'scheme06'">
+                </jqxChart>
               </div>
             </div>
-            <canvas baseChart
-            [data]="pieChartData"
-            [labels]="pieChartLabels"
-            [chartType]="pieChartType"
-            [colors]="pieChartColors"
-            [options]="pieChartOptions"
-            (chartHover)="chartHovered($event)"
-            (chartClick)="chartClicked($event)"></canvas>
+  
           </div>
-
+          <div class="col-md-6  col-sm-12">
+            <div class="bg-clr1">
+              <div class="row cont3">
+                <div class="col-md-5 col-lg-5 col-xs-4">
+                  <p class="shifont">Delivery by Destination</p>
+                </div>
+              </div>
+              <canvas baseChart
+              [data]="pieChartData"
+              [labels]="pieChartLabels"
+              [chartType]="pieChartType"
+              [colors]="pieChartColors"
+              [options]="pieChartOptions"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+            </div>
+  
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>

@@ -1,0 +1,33 @@
+.bg-clr {
+    background: #ffffff;
+ 
+    box-shadow: 0px 0px 10px -1px #ccc;
+  
+}
+
+.bg-clr1 {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px -1px #ccc;
+  
+  
+}
+
+.material-icons{
+    float: right;
+}
+
+.table-responsive{
+    padding: 5px;
+}
+
+.wid-44{
+    width: 2px;
+}
+
+.wid-250{
+    width: 250px;
+}
+
+.wid-260{
+    width: 260px;
+}

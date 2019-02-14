@@ -87,6 +87,9 @@ table a
     padding-top:15px !important;
     padding-bottom: 15px !important;
 }
+.bld{
+    font-weight: bold !important;
+}
 
 .cancel{
     padding-left: 40px;

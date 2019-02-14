@@ -68,7 +68,10 @@ import { StructuresComponent } from './warehouse/structures/structures.component
 import { TransportHistoryComponent } from './warehouse/transport-history/transport-history.component';
 import { TransportDetailsComponent } from './warehouse/transport-details/transport-details.component';
 import { MatNativeDateModule } from '@angular/material';
-
+import {MatIconModule} from '@angular/material/icon';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatMenuModule} from '@angular/material/menu';
+import { ConsignmentSearchComponent } from './admin/popup/consignment-search/consignment-search.component';
 
 @NgModule({
   declarations: [
@@ -126,6 +129,7 @@ import { MatNativeDateModule } from '@angular/material';
     StructuresComponent,
     TransportHistoryComponent,
     TransportDetailsComponent,
+    ConsignmentSearchComponent,
     ],
   imports: [
     BrowserModule,
@@ -142,6 +146,11 @@ import { MatNativeDateModule } from '@angular/material';
     MatCardModule,
     ChartsModule,
     MatDatepickerModule,
+    MatNativeDateModule,
+    MatIconModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatMenuModule,
     MatNativeDateModule
   ],
   providers: [AuthGuardService],

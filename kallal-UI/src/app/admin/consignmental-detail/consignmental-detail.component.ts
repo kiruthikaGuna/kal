@@ -1,6 +1,7 @@
 import { MatDialog } from '@angular/material';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ConsignmentSearchComponent } from '../popup/consignment-search/consignment-search.component';
 
 @Component({
   selector: 'app-consignmental-detail',
@@ -9,8 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ConsignmentalDetailComponent implements OnInit {
 
-  constructor( private router: Router) { }
-
+  constructor(public dialog: MatDialog, private router: Router) { }
   table1value = [
     {
       ConsignmentNo: 'TVS122545', From: 'Singapore', To: 'Salem', ShippedDate: '15 Feb 2019',
@@ -29,5 +29,13 @@ export class ConsignmentalDetailComponent implements OnInit {
 
   OpenDial() {
     this.router.navigate(['home/consignmentWeight']);
+  }
+
+  search() {
+    const dialogRef = this.dialog.open(ConsignmentSearchComponent, {
+      width: '425px',
+    });
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
 }

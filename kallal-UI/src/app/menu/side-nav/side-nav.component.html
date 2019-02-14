@@ -6,7 +6,8 @@
                     <img src="./assets/img/logo@2x.png" class="center">
                 </li>
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['dashboard']" [ngClass]="(menu == 'dashboard')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['dashboard']"
+                        [ngClass]="(menu == 'dashboard')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('dashboard')">
                         <img src="assets/img/Dashboard.png" />
                         <span class="leftpad"> Dashboard</span>
@@ -14,7 +15,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['User_Management']" [ngClass]="(menu == 'User_Management')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['User_Management']"
+                        [ngClass]="(menu == 'User_Management')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('User_Management')">
                         <img src="assets/img/User_Management.png" />
                         <span class="leftpad"> User Management </span>
@@ -22,7 +24,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Vender_Master']" [ngClass]="(menu == 'Vender_Master')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Vender_Master']"
+                        [ngClass]="(menu == 'Vender_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Vender_Master')">
                         <img src="assets/img/Vendor_Master.png" />
                         <span class="leftpad"> Vender Master </span>
@@ -30,7 +33,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Dispatch_Master']" [ngClass]="(menu == 'Dispatch_Master')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Dispatch_Master']"
+                        [ngClass]="(menu == 'Dispatch_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Dispatch_Master')">
                         <img src="assets/img/Dispatch_Master.png" />
                         <span class="leftpad"> Dispatch Master</span>
@@ -38,7 +42,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Warehouse_Master']" [ngClass]="(menu == 'Warehouse_Master')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Warehouse_Master']"
+                        [ngClass]="(menu == 'Warehouse_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Warehouse_Master')">
                         <img src="assets/img/Warehouse_Master.png" />
                         <span class="leftpad"> Warehouse Master</span>
@@ -46,7 +51,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Structure_Master']" [ngClass]="(menu == 'Structure_Master')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Structure_Master']"
+                        [ngClass]="(menu == 'Structure_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Structure_Master')">
                         <img src="assets/img/Structure_Master.png" />
                         <span class="leftpad"> structure Master </span>
@@ -54,7 +60,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Product_Master']" [ngClass]="(menu == 'Product_Master')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Product_Master']"
+                        [ngClass]="(menu == 'Product_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Product_Master')">
                         <img src="assets/img/Product_Master.png" />
                         <span class="leftpad"> Product Master </span>
@@ -62,7 +69,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Quality_Master']" [ngClass]="(menu == 'Quality_Master')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Quality_Master']"
+                        [ngClass]="(menu == 'Quality_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Quality_Master')">
                         <img src="assets/img/Quality_Master.png" />
                         <span class="leftpad"> Quality Master </span>
@@ -70,7 +78,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Big_Master']" [ngClass]="(menu == 'Big_Master')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Big_Master']"
+                        [ngClass]="(menu == 'Big_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Big_Master')">
                         <img src="assets/img/Bag_Master.png" />
                         <span class="leftpad"> Bag Master </span>
@@ -78,7 +87,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Currency_Master']" [ngClass]="(menu == 'Currency_Master')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Currency_Master']"
+                        [ngClass]="(menu == 'Currency_Master')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Currency_Master')">
                         <img src="assets/img/Currency_Master.png" />
                         <span class="leftpad"> Currency Master</span>
@@ -86,7 +96,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Approvel']" [ngClass]="(menu == 'Approvel')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Approvel']"
+                        [ngClass]="(menu == 'Approvel')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Approvel')">
                         <img src="assets/img/Approval.png" />
                         <span class="leftpad"> Approvel </span>
@@ -94,7 +105,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='admin'">
-                    <a [routerLink]="['Consignmental_Detail']" [ngClass]="(menu == 'Consignmental_Detail')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Consignmental_Detail']"
+                        [ngClass]="(menu == 'Consignmental_Detail')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Consignmental_Detail')">
                         <img src="assets/img/Conversion_Master.png" />
                         <span class="leftpad"> Consignmental Detail </span>
@@ -103,7 +115,8 @@
 
                 <!-- Warehouse menu's start -->
                 <li *ngIf="this.login_user.role=='warehouse'">
-                    <a [routerLink]="['TransportList']" [ngClass]="(menu == 'TransportList')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['TransportList']"
+                        [ngClass]="(menu == 'TransportList')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('TransportList')">
                         <img src="assets/img/Conversion_Master.png" />
                         <span class="leftpad"> Transport List </span>
@@ -111,8 +124,9 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='warehouse'">
-                    <a [routerLink]="['VehicleDetails']" [ngClass]="(menu == 'VehicleDetails')?'active-selected':'deactive-selected'"
-                        (click)="brumbCrumb('VehicleDetails')">
+                    <a [routerLink]="['VechicleDetails']"
+                        [ngClass]="(menu == 'VechicleDetails')?'active-selected':'deactive-selected'"
+                        (click)="brumbCrumb('VechicleDetails')">
                         <img src="assets/img/Conversion_Master.png" />
                         <span class="leftpad"> Vehicle Details </span>
                     </a>
@@ -126,9 +140,10 @@
                     </a>
                 </li>
 
-                
+
                 <li *ngIf="this.login_user.role=='warehouse'">
-                    <a [routerLink]="['Repacking']" [ngClass]="(menu == 'Repacking')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Repacking']"
+                        [ngClass]="(menu == 'Repacking')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Repacking')">
                         <img src="assets/img/Conversion_Master.png" />
                         <span class="leftpad"> Repacking </span>
@@ -136,7 +151,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='warehouse'">
-                    <a [routerLink]="['Shipping']" [ngClass]="(menu == 'Shipping')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Shipping']"
+                        [ngClass]="(menu == 'Shipping')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Shipping')">
                         <img src="assets/img/Conversion_Master.png" />
                         <span class="leftpad"> Shipping </span>
@@ -144,7 +160,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='warehouse'">
-                    <a [routerLink]="['Structures']" [ngClass]="(menu == 'Structures')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['Structures']"
+                        [ngClass]="(menu == 'Structures')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('Structures')">
                         <img src="assets/img/Conversion_Master.png" />
                         <span class="leftpad"> Structures </span>
@@ -152,7 +169,8 @@
                 </li>
 
                 <li *ngIf="this.login_user.role=='warehouse'">
-                    <a [routerLink]="['TransportHistory']" [ngClass]="(menu == 'TransportHistory')?'active-selected':'deactive-selected'"
+                    <a [routerLink]="['TransportHistory']"
+                        [ngClass]="(menu == 'TransportHistory')?'active-selected':'deactive-selected'"
                         (click)="brumbCrumb('TransportHistory')">
                         <img src="assets/img/Conversion_Master.png" />
                         <span class="leftpad"> Transport History </span>
@@ -163,7 +181,7 @@
         </div>
 
         <div class="col-sm-10  col-md-10 col-lg-10 menu pad-0">
-            <div class="panel panel-default hgh-top">
+            <div class="panel panel-default navbar-fixed-top hgh-top">
                 <div class="panel-body">
                     <ul class="nav navbar-nav right-panel">
                         <li>
@@ -182,7 +200,7 @@
                                     <img src="assets/img/small-down.png" />
                                 </span>
                                 <div class="dropdown-content">
-                                     <a (click)="logout();">Logout</a>
+                                    <a (click)="logout();">Logout</a>
                                 </div>
                             </div>
 

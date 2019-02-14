@@ -108,12 +108,13 @@ tr:nth-child(even){
     background: #ffffff;
     min-height: 180px;
     box-shadow: 0px 0px 10px -1px #ccc;
-}
+  }
 
 .bg-clr1 {
     background: #ffffff;
+     box-shadow: 0px 0px 10px -1px #ccc;
     padding-bottom: 55px;
-    box-shadow: 0px 0px 10px -1px #ccc;
+  
 }
 
 .cont3{
@@ -139,4 +140,7 @@ padding: 8px;
 .font{
     font-size: 12px;
 }
-
+/* .bg{
+padding-bottom: 55px;
+    background: white;
+} */

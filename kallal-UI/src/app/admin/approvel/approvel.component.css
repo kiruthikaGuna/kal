@@ -30,6 +30,10 @@
 
 }
 
+.panel{
+    padding-bottom: 20px;
+}
+
 .cancel{
     padding-left: 40px;
     padding-right: 40px;

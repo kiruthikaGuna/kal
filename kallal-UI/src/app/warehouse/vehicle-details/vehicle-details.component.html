@@ -1,81 +1,82 @@
-
 <div class="container col-md-12 row">
-    <div class="col-md-3 col-sm-3">
-      <h3>Vehicle details</h3>
+  <div class="col-md-3 col-sm-3">
+    <h3>Vehicle details</h3>
+  </div>
+</div>
+
+<div class="container col-md-12 col-sm-12">
+  <div class="panel panel-default">
+    <div class="panel-body pb-0">
+      <div class="row">
+        <div class="col-md-2 col-sm-2 text-right mt-8">
+          <label>Vehicle No.</label>
+        </div>
+        <div class="col-md-2 col-sm-2 mt-5">
+          <mat-form-field placeholder="Enter data">
+            <input matInput type="text">
+          </mat-form-field>
+        </div>
+        <div class="col-md-3 col-sm-2 text-right mt-8">
+      <label for="pwd">Arrived Date</label>
+    </div>
+    <div class="col-md-3 col-sm-2">
+      <mat-form-field class="matdate">
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="col-md-2 col-sm-2">&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="submit" class="btn colorbtn btn-default">Submit</button>
     </div>
   </div>
-
-  <div class="container col-md-12 col-sm-12">
-      <div class="panel panel-default">
-      <div class="panel-body">
-          <form class="form-inline">
-            <div class="col-md-2 col-sm-2 text-right mt-8">
-              <label for="email">Vehicle No.</label>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <input type="email" class="form-control wd-10" id="email" placeholder="Enter data" />
-            </div>
-                       <div class="col-md-3 col-sm-2 text-right mt-8">
-              <label for="pwd">Arrived Date</label>
-            </div>
-            <div class="col-md-3 col-sm-2">
-                <mat-form-field class="matdate">
-                    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                    <mat-datepicker #picker></mat-datepicker>
-                  </mat-form-field>
-            </div>
-            <div class="col-md-2 col-sm-2">&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="submit" class="btn colorbtn btn-default">Submit</button>
-            </div>
-          </form>      
-      </div> 
-  </div> 
-  <div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r  mb-0">
-    <div class="panel-body padd">
-      <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
-        <table class="table">
-          <thead class="header-clr" style="background-color: #f0f0f7;">
-            <tr class=" ">
-              <th>#</th>
-              <th>Product</th>
-              <th>No. of Bags</th>
-              <th>Quantity</th>
-              <th>Dispatch Center</th>
-              <th>Shipped Date</th>
-              <th>Weight</th>
-            </tr>
-          </thead>
-          <tbody class="alternate_color body-clr">
-            <tr *ngFor="let tablevalue of table1value">
-              <td>{{tablevalue.no}}</td>
-              <td>{{tablevalue.Product}}</td>
-              <td>{{tablevalue.NoofBags}}</td>
-              <td>{{tablevalue.Quantity}}</td>
-              <td>{{tablevalue.DispatchCenter}}</td>
-              <td>{{tablevalue.ShippedDate}}</td>
-              <td>{{tablevalue.Weight}}</td>
-            </tr>
-          </tbody>
-        </table>
+  </div>
+</div>
+<div class="panel panel-default tablecolor col-xs-12 col-sm-12 col-md-12 col-lg-12 marginTable r mt-2 mb-0">
+  <div class="panel-body padd">
+    <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive vertical scroll pad-0">
+      <table class="table">
+        <thead class="header-clr" style="background-color: #f0f0f7;">
+          <tr class=" ">
+            <th>#</th>
+            <th>Product</th>
+            <th>No. of Bags</th>
+            <th>Quantity</th>
+            <th>Dispatch Center</th>
+            <th>Shipped Date</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody class="alternate_color body-clr">
+          <tr *ngFor="let tablevalue of table1value">
+            <td>{{tablevalue.no}}</td>
+            <td>{{tablevalue.Product}}</td>
+            <td>{{tablevalue.NoofBags}}</td>
+            <td>{{tablevalue.Quantity}}</td>
+            <td>{{tablevalue.DispatchCenter}}</td>
+            <td>{{tablevalue.ShippedDate}}</td>
+            <td>{{tablevalue.Weight}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="panel bg panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12 margn bld">
+      <div class="col-lg-12 panel mt-20 bg">
+        <div class="col-lg-offset-9 col-lg-2 rt">Net Weight</div>
+        <div class="col-lg-1 rt">70 kg</div>
+      </div>
+      <div class="col-lg-12 panel bg">
+        <div class="col-lg-offset-9 col-lg-2 rt">Total Bag Weight</div>
+        <div class="col-lg-1 rt">1.5 kg</div>
+      </div>
+      <div class="col-lg-12 panel bg">
+        <div class="col-lg-offset-9 col-lg-2 rt">Gross Weight</div>
+        <div class="col-lg-1 rt">71.5 kg</div>
       </div>
     </div>
-  </div>
-  <div class="panel bg panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12 margn">
-    <div class="col-lg-12 panel mt-20 bg">
-      <div class="col-lg-offset-9 col-lg-2 rt">Net Weight</div>
-      <div class="col-lg-1 rt">70 kg</div>
+    <div class="row col-sm-12 col-md-12 mr-t text-center">
+        <button class="btn colorbtn1 btnpad mb-6" (click)="OpenDial()">Scan Now</button>
     </div>
-    <div class="col-lg-12 panel bg">
-      <div class="col-lg-offset-9 col-lg-2 rt">Total Bag Weight</div>
-      <div class="col-lg-1 rt">1.5 kg</div>
-    </div>
-    <div class="col-lg-12 panel bg">
-      <div class="col-lg-offset-9 col-lg-2 rt">Gross Weight</div>
-      <div class="col-lg-1 rt">71.5 kg</div>
-    </div>
-  </div>
-  <div class="row col-sm-12 col-md-12 mr-t text-center">
-    <button class="btn colorbtn1 btnpad" (click)="OpenDial()">Scan Now</button>
-  </div>
+</div>
 </div>

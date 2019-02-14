@@ -112,10 +112,27 @@ table a
     color: white;
 }
 
+.bld{
+    font-weight: bold !important;
+}
+
 .wd-10{
     width: 10em !important;
 }
 .matdate{
     height: 0px !important;
     margin-top: -5px !important;
+}
+
+.mt-5{
+    margin-top: -5px;
+}
+.mt-2{
+    margin-top: 2px;
+}
+.mb-6{
+    margin-bottom: 6px;
+}
+.pb-0{
+    padding-bottom: 0px !important;
 }

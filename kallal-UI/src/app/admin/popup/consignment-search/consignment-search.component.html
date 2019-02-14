@@ -1,0 +1,66 @@
+<div class="row col-md-12 col-sm-12">
+  <div class="col-md-6 col-sm-6">
+<label>Consignment Details</label>
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <mat-form-field class="example-full-width">
+      <input matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-6 col-sm-6">
+    <label>From Designation</label>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <mat-form-field class="pad-0 matField dropdown">
+          <mat-select  data-toggle="dropdown">
+            <mat-option *ngFor="let samplevalue of dropDwon" [value]="samplevalue.value">
+              {{ samplevalue.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      
+  <div class="col-md-6 col-sm-6">
+    <label>To Warehouse</label>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <mat-form-field class="pad-0 matField dropdown">
+          <mat-select  data-toggle="dropware">
+            <mat-option *ngFor="let samplevalue of dropware" [value]="samplevalue.value">
+              {{ samplevalue.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <label>Shipping Date</label>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <mat-form-field class="date">
+              <input matInput [matDatepicker]="picker" >
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+            <label>Arrival Date</label>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <mat-form-field  class="date">
+                  <input matInput [matDatepicker]="picker1">
+                  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                  <mat-datepicker #picker1></mat-datepicker>
+                </mat-form-field>
+              </div>
+
+              <div class="row col-sm-12 col-md-12 mr-t">
+                <div class="col-lg-offset-4 col-lg-4 col-lg-offset-4 text-center">
+                  <button class="btn colorbtn1 btnpad" (click)="save()">Save</button>
+                  
+                </div>
+              </div>
+</div>
